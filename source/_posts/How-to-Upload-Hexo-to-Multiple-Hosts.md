@@ -3,11 +3,17 @@ title: 如何进行多主机上传Hexo
 date : 2024年12月14日14:47:20
 description: 使用Hexo在多台主机上同步博客的教程。
 toc_number: true
+categories: 
+  - Hexo学习
+tags: 
+  - Hexo
+  - 同步
+
 ---
 参考了网络教程，这次来写一个如何多主机上传电脑。这样我就不用找好多好多网站。
 # 老电脑的配置步骤
 ## GitHub分支设置
-首先在打开GitHub创建一个分支，比如我创建了「hexo」分支。
+首先在打开GitHub创建一个分支，比如我创建了`hexo`分支。
 ![创建分支](/img/How-to-Upload-Hexo-to-Multiple-Hosts/Create-a-Hexo-branch.png)
 这个时候会将`master`的分支复制到`hexo`。
 将其设定为默认分支。
@@ -16,9 +22,7 @@ toc_number: true
 将新建的hexo分支克隆克隆到本地,然后进入该目录
 ```
 git clone  https://github.com/username/username.github.io.git
-
 cd username.github.io
-
 ```
 确认当前分支为hexo
 ```
@@ -59,7 +63,7 @@ git push origin hexo
 以后每次发布新文章或修改网站样式文件时，依次输入以下命令行：
 ```
 git add . 
-git commit -m "描述"
+git commit -m "some descrption"
 git push origin hexo
 ```
 即可把环境文件推送到hexo分支。
@@ -71,8 +75,8 @@ hexo g -d
 
 # 新电脑的配置步骤
 ## 环境准备
-首先需要下载```node.js```和```git```。
-安装```hexo```输入命令行：
+首先需要下载`node.js`和`git`。
+安装`hexo`输入命令行：
 ```
 npm install -g hexo-cli
 ```
@@ -83,7 +87,7 @@ npm install -g hexo-cli
 git clone  https://github.com/username/username.github.io.git
 ```
 
-打开```packge.json```输入或者按照提示安装```npm install```。
+打开`packge.json`输入或者按照提示安装`npm install`。
 本地生成网站并开启博客服务器：
 ```
 hexo g
@@ -98,7 +102,7 @@ git pull origin hexo
 ```
 从远程hexo分支拉取最新的环境文件到本地，可以理解为svn的更新操作。比如在公司写了博客，回家在电脑上也要写需要先执行这一步操作。
 ## 发布文章流程
-文章写完，要发布时，需要先提交环境文件，再发布文章。依次执行以下命令：
+文章写完要发布时，需要先提交环境文件，再发布文章。依次执行以下命令：
 ```
 git add . 
 git commit -m "some descrption"
@@ -106,7 +110,5 @@ git push origin hexo
 hexo g -d
 ```
 # 参考文章
-1. hexo博客多设备同步：
-https://xuexuan.site/2021/02/04/hexo%E5%8D%9A%E5%AE%A2%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/
-2. Hexo在多台电脑上提交和更新：
-https://blog.csdn.net/K1052176873/article/details/122879462
+- [hexo博客多设备同步](https://xuexuan.site/2021/02/04/hexo%E5%8D%9A%E5%AE%A2%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/)
+- [Hexo在多台电脑上提交和更新](https://blog.csdn.net/K1052176873/article/details/122879462)
