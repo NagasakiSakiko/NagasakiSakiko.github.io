@@ -8,7 +8,7 @@ subtitle: '欢迎TSAIHUNGYE的博客'
 description: '欢迎访问，随便写写'
 keywords:
 author: Tsai_hungye
-language: zh-cn
+language: zh-CN
 timezone: ''
 
 # URL
@@ -104,3 +104,9 @@ deploy:
   type: git
   repository: https://github.com/NagasakiSakiko/NagasakiSakiko.github.io.git
   branch: master
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 1000

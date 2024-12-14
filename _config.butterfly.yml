@@ -42,7 +42,7 @@ code_blocks:
   copy: true
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
-  shrink: true
+  shrink: false
   fullpage: false
 
 # Social media links
@@ -416,7 +416,7 @@ anchor:
   # Click the headline to scroll and update the anchor
   click_to_scroll: false
 
-photofigcaption: false
+photofigcaption: true
 
 copy:
   enable: true
@@ -472,7 +472,7 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
+  use: local_search
   placeholder:
 
   # Algolia Search
@@ -482,13 +482,7 @@ search:
 
   # Local Search
   local_search:
-    # Preload the search data when the page loads.
-    preload: false
-    # Show top n results per article, show all results by setting to -1
-    top_n_per_article: 1
-    # Unescape html strings to the readable one.
-    unescape: false
-    CDN:
+    enable: true
 
   # Docsearch
   # https://docsearch.algolia.com/
@@ -895,7 +889,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: fancybox
 
 # --------------------------------------
 # Tag Plugins settings
@@ -1092,7 +1086,16 @@ CDN:
   # katex:
   # katex_copytex:
   # lazyload:
-  # local_search:
+# Local Search
+local_search:
+  # Preload the search data when the page loads.
+  preload: true
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  CDN:
+
   # main:
   # main_css:
   # mathjax:
