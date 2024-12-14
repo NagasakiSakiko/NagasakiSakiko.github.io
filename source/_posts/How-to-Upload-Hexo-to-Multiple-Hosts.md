@@ -36,7 +36,7 @@ output:
 注意`.git`是个隐藏文件夹，windows下需要右击文件夹内空白处，点选「显示/隐藏 异常文件」。
 
 
-打开git bash here输入命令行
+打开`git bash here`输入命令行
 ```
 git add -A
 ```
@@ -51,13 +51,13 @@ git commint -m "some descrption"
 ```
 git push origin hexo
 ```
-将这个文件夹推送到```hexo```分支，刷新一下GitHub，```hexo```分支应该被清空了。
+将这个文件夹推送到`hexo`分支，刷新一下GitHub，`hexo`分支应该被清空了。
 
 接下来有两个方法：
-1. 找见我们本地的hexo博客地址，将hexo文件夹内除```.deploy_git``` 以外都复制到clone下来的中```username.github.io```。
+1. 找见我们本地的hexo博客地址，将hexo文件夹内除`.deploy_git` 以外都复制到clone下来的中`username.github.io`。
 2. 把下载的```username.github.io```中的```.git```复制到本地的hexo博客地址。
 
-笔者选择方法一。使用方法一的时候要注意：如果已经克隆过主题文件，那么需要把```theme```主题文件夹里的``` .git ```也删除。因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了。
+笔者选择方法一。使用方法一的时候要注意：如果已经克隆过主题文件，那么需要把`theme`主题文件夹里的` .git `也删除。因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了。
 
 ### 提交与推送至远程库
 以后每次发布新文章或修改网站样式文件时，依次输入以下命令行：
@@ -104,7 +104,7 @@ git pull origin hexo
 ## 发布文章流程
 文章写完要发布时，需要先提交环境文件，再发布文章。依次执行以下命令：
 ```
-git add . 
+git add .
 git commit -m "some descrption"
 git push origin hexo
 hexo g -d

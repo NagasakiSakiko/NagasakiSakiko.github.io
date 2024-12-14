@@ -40,7 +40,7 @@ code_blocks:
 
   # Toolbar
   copy: true
-  language: true
+  language: false
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
   fullpage: false
@@ -56,7 +56,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/avatar.png
+favicon: /img/avatar.jpg
 
 avatar:
   img: /img/avatar.jpg
@@ -229,7 +229,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/NagasakiSakiko/NagasakiSakiko.github.io/tree/hexo
+  url: https://github.com/NagasakiSakiko/NagasakiSakiko.github.io/tree/hexo/source/
 
 # Related Articles
 related_post:
@@ -247,7 +247,7 @@ post_pagination: 1
 
 # Displays outdated notice for a post
 noticeOutdate:
-  enable: false
+  enable: true
   # Style: simple / flat
   style: flat
   # When will it be shown
@@ -394,7 +394,7 @@ darkmode:
   end:
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -422,7 +422,7 @@ copy:
   enable: true
   # Add the copyright information after copied content
   copyright:
-    enable: false
+    enable: true
     limit_count: 150
 
 # Need to install the hexo-wordcount plugin
