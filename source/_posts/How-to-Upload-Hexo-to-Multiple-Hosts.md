@@ -2,13 +2,12 @@
 title: 如何进行多主机上传Hexo
 date : 2024年12月14日14:47:20
 description: 使用Hexo在多台主机上同步博客的教程。
-toc_number: true
+cover: https://picsum.photos/id/60/1920/1200
 categories: 
   - Hexo学习
 tags: 
   - Hexo
   - 同步
-
 ---
 参考了网络教程，这次来写一个如何多主机上传电脑。这样我就不用找好多好多网站。
 # 老电脑的配置步骤
@@ -55,7 +54,7 @@ git push origin hexo
 
 接下来有两个方法：
 1. 找见我们本地的hexo博客地址，将hexo文件夹内除`.deploy_git` 以外都复制到clone下来的中`username.github.io`。
-2. 把下载的```username.github.io```中的```.git```复制到本地的hexo博客地址。
+2. 把下载的`username.github.io`中的`.git`复制到本地的hexo博客地址。
 
 笔者选择方法一。使用方法一的时候要注意：如果已经克隆过主题文件，那么需要把`theme`主题文件夹里的` .git `也删除。因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了。
 
