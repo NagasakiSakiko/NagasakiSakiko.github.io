@@ -1,6 +1,6 @@
 ---
 title: 如何进行多主机上传Hexo
-date : 2024年12月14日14:47:20
+date : 2024-12-14 14:47:20
 description: 使用Hexo在多台主机上同步博客的教程。
 cover: https://picsum.photos/id/60/1920/1200
 categories: 
