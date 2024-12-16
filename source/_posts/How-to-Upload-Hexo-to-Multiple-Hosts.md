@@ -44,7 +44,7 @@ git add -A
 
 输入命令行
 ```
-git commint -m "some descrption"
+git commit -m "some description"
 ```
 输入命令行
 ```
@@ -62,7 +62,7 @@ git push origin hexo
 以后每次发布新文章或修改网站样式文件时，依次输入以下命令行：
 ```
 git add . 
-git commit -m "some descrption"
+git commit -m "some description"
 git push origin hexo
 ```
 即可把环境文件推送到hexo分支。
@@ -74,7 +74,7 @@ hexo g -d
 
 # 新电脑的配置步骤
 ## 环境准备
-首先需要下载`node.js`和`git`。
+首先需要下载[node.js](https://nodejs.org/en/)和[git](https://git-scm.com/)。
 安装`hexo`输入命令行：
 ```
 npm install -g hexo-cli
@@ -86,7 +86,7 @@ npm install -g hexo-cli
 git clone  https://github.com/username/username.github.io.git
 ```
 
-打开`packge.json`输入或者按照提示安装`npm install`。
+打开`package.json`输入或者按照提示安装`npm install`。
 本地生成网站并开启博客服务器：
 ```
 hexo g
@@ -104,10 +104,11 @@ git pull origin hexo
 文章写完要发布时，需要先提交环境文件，再发布文章。依次执行以下命令：
 ```
 git add .
-git commit -m "some descrption"
+git commit -m "some description"
 git push origin hexo
 hexo g -d
 ```
 # 参考文章
 - [hexo博客多设备同步](https://xuexuan.site/2021/02/04/hexo%E5%8D%9A%E5%AE%A2%E5%A4%9A%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5/)
 - [Hexo在多台电脑上提交和更新](https://blog.csdn.net/K1052176873/article/details/122879462)
+- [快速搭建个人博客 —— 保姆级教程](https://pdpeng.github.io/2022/01/19/setup-personal-blog/)
