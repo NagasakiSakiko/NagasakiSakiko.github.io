@@ -167,6 +167,8 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+      - 道路是曲折的，前途是光明的。
+      - 在坚冰还盖着北海的时候，我看到了怒放的梅花。
       - 萍水相逢 尽是他乡之客
       - The longest way must have its close; the gloomiest night will on to a morning.
       - If you asked to see me, our meeting would be meaningful to me.
