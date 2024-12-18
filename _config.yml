@@ -102,7 +102,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/NagasakiSakiko/NagasakiSakiko.github.io.git
+  repository: git@github.com:NagasakiSakiko/NagasakiSakiko.github.io.git
   branch: master
 
 search:
