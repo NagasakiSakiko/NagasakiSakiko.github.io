@@ -1,8 +1,18 @@
-each url, icon in theme.social
-  -
-    const [link, title, color] = url.split('||').map(i => trim(i))
-    const href = url_for(link)
-    const iconStyle = color ? `color: ${color.replace(/[\'\"]/g, '')};` : ''
-    const iconTitle = title || ''
-  a.social-icon(href=href target="_blank" title=iconTitle)
-    i(class=icon style=iconStyle)
+// each url, icon in theme.social
+//   -
+//     const [link, title, color] = url.split('||').map(i => trim(i))
+//     const href = url_for(link)
+//     const iconStyle = color ? `color: ${color.replace(/[\'\"]/g, '')};` : ''
+//     const iconTitle = title || ''
+//   a.social-icon(href=href target="_blank" title=iconTitle)
+//     i(class=icon style=iconStyle)
+each value, title in theme.social
+  a.social-icon.faa-parent.animated-hover(href=url_for(trim(value.split('||')[0])) target="_blank" title=title === undefined ? '' : trim(title))
+    if value.split('||')[1]
+      - var icon_value = trim(value.split('||')[1])
+      - var anima_value = value.split('||')[2] ? trim(value.split('||')[2]) : 'faa-tada'
+      if icon_value.substring(0,2)=="fa"
+        i.fa-fw(class=icon_value + ' ' + anima_value)
+      else if icon_value.substring(0,4)=="icon"
+        svg.social_icon(aria-hidden="true" class=anima_value)
+          use(xlink:href=`#`+ icon_value)

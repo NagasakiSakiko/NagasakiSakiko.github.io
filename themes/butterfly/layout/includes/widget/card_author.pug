@@ -1,7 +1,14 @@
 if theme.aside.card_author.enable
   .card-widget.card-info.text-center
-    .avatar-img
-      img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+    //.avatar-img
+    //  img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+    div.card-info-avatar
+      .avatar-img
+        img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
+      div.author-status-box
+        div.author-status
+          g-emoji.g-emoji(alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg") 🐟
+          span 认真摸鱼中
     .author-info-name= config.author
     .author-info-description!= theme.aside.card_author.description || config.description
 
@@ -20,6 +27,9 @@ if theme.aside.card_author.enable
       a#card-info-btn(href=theme.aside.card_author.button.link)
         i(class=theme.aside.card_author.button.icon)
         span=theme.aside.card_author.button.text
+          i.faa-passing.animated(style="padding-left:20px;display:inline-block;vertical-align:middle;")
+            svg.icon(style="height:28px;width:28px;fill:currentColor;position:relative;top:5px")
+              use(xlink:href='#icon-yueyeche')
   
     if(theme.social)
       .card-info-social-icons

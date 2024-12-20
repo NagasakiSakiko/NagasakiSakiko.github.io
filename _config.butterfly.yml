@@ -49,9 +49,9 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/NagasakiSakiko || Github || '#24292e'
-  fas fa-envelope: mailto:tsahungye@outlook.com || Email || '#4a7dbe'
-  fas fa-video: https://space.bilibili.com/24643704 || BiliBili || ‘f03d’
+  github: https://github.com/NagasakiSakiko || icon-github
+  email: mailto:tsahungye@outlook.com || icon-youxiang
+  bilibili: https://space.bilibili.com/24643704 || icon-bilibili
 # --------------------------------------
 # Image Settings
 # --------------------------------------
@@ -522,12 +522,12 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: Twikoo
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   # Display comment count in post's top_img
   count: false
   # Display comment count in Home Page
@@ -610,7 +610,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://twikoo-ten-henna.vercel.app/
   region:
   # Use Twikoo visitor count as the page view count
   visitor: false
@@ -795,7 +795,7 @@ beautify:
   # Specify the field to beautify (site or post)
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
-  title_prefix_icon: '\f0c1'
+  title_prefix_icon: '\f863'
   # Specify the color of the title prefix icon, such as '#F47466'
   title_prefix_icon_color: '#F47466'
 
@@ -1034,8 +1034,15 @@ css_prefix: true
 inject:
   head:
    - <link rel="stylesheet" href="/css/custom.css">
+   - <link rel="stylesheet" href="/css/wavy.css">
+   - <link rel="stylesheet" href="/css/breathing-light.css">
+   - <link rel="stylesheet" href="/css/posttitle.css">
+   - <link rel="stylesheet" href="/css/universe.css">
   bottom:
-   - <script src="//at.alicdn.com/t/c/font_4786593_13ji6k9tf3ql.js"></script>
+   - <script src="//at.alicdn.com/t/c/font_4786593_vuetv8hfu0b.js"></script>
+   - <script async src="/js/nav.js"></script>
+   - <canvas id="universe"></canvas>
+   - <script defer src="/js/universe.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

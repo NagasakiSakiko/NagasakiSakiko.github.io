@@ -40,7 +40,7 @@ if theme.menu
               if icon_value.substring(0,2)=="fa"
                 i.fa-fw(class=icon_value + ' ' + anima_value)
               else if icon_value.substring(0,4)=="icon"
-                svg.icon(aria-hidden="true" class=anima_value)
+                svg.menu_icon(aria-hidden="true" class=anima_value)
                   use(xlink:href=`#`+ icon_value)
             span=' '+label
       else
@@ -54,7 +54,7 @@ if theme.menu
               if icon_label.substring(0,2)=="fa"
                 i.fa-fw(class=icon_label + ' ' + anima_label)
               else if icon_label.substring(0,4)=="icon"
-                svg.icon(aria-hidden="true" class=anima_label)
+                svg.menu_icon(aria-hidden="true" class=anima_label)
                   use(xlink:href=`#`+ icon_label)
             span=' '+ trim(labelArray[0])
             i.fas.fa-chevron-down
@@ -69,6 +69,6 @@ if theme.menu
                     if icon_val.substring(0,2)=="fa"
                       i.fa-fw(class=icon_val + ' ' + anima_val)
                     else if icon_val.substring(0,4)=="icon"
-                      svg.icon(aria-hidden="true" class=anima_val)
+                      svg.menu_icon(aria-hidden="true" class=anima_val)
                         use(xlink:href=`#`+ icon_val)
                   span=' '+ lab

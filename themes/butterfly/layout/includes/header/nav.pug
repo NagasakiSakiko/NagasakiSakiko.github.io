@@ -11,9 +11,11 @@ nav#nav
   #menus
     if theme.search.use
       #search-button
-        span.site-page.social-icon.search
-          i.fas.fa-search.fa-fw
-          span= ' ' + _p('search.title')
+        //span.site-page.social-icon.search
+          //i.fas.fa-search.fa-fw
+        a.search.faa-parent.animated-hover(title="检索站内任何你想要的信息")
+          svg.faa-tada.icon(style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true")
+            use(xlink:href='#icon-sousuo')
     if theme.menu
       != partial('includes/header/menu_item', {}, {cache: true})
 
