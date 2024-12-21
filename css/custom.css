@@ -23,24 +23,19 @@
 
 
 /* 去除导航栏选项中底下的蓝条 */
-#nav *::after{
-    background-color: transparent!important;
-}
-
-.search {
-    cursor: pointer;
-}
-
+/*#nav *::after{*/
+/*    background-color: transparent!important;*/
+/*}*/
 
 /* 导航栏菜单鼠标移入字体放大 */
-#nav #search-button {
-    font-size: 14px; /* 或者您希望的默认大小 */
-}
-#nav #site-name:hover,
-#nav .menus_item:hover,
-#nav #search-button:hover{
-    font-size:28px;
-}
+/*#nav #search-button {*/
+/*    font-size: 14px; !* 或者您希望的默认大小 *!*/
+/*}*/
+/*#nav #site-name:hover,*/
+/*#nav .menus_item:hover,*/
+/*#nav #search-button:hover{*/
+/*    font-size:28px;*/
+/*}*/
 
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item {
@@ -114,7 +109,13 @@ div#archive {
     color: #ffffff;
 }
 
-svg.icon {
+/* 导航栏字体大小 */
+#nav .menus_item, #nav #site-name, #nav #search-button{
+    font-size: 24px;
+}
+
+/*社交图标大小*/
+svg.social_icon {
     width: 1.28em;
     height: 1.28em;
     vertical-align: -0.15em;
@@ -122,20 +123,18 @@ svg.icon {
     overflow: hidden;
 }
 
-svg.social_icon {
-    width: 1.20em;
-    height: 1.20em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-
+/*菜单栏图标大小*/
 svg.menu_icon {
     width: 1.28em;
     height: 1.28em;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+
+/*鼠标悬停在搜索按钮上时的指针样式设置为pointer*/
+#search-button:hover {
+    cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
 }
 
 .nav-fixed #nav{
@@ -255,3 +254,4 @@ center#name-container {
     display: inline-block;
     position: relative;
 }
+
