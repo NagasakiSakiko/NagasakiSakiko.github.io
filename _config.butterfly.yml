@@ -72,7 +72,7 @@ default_top_img: "/img/default.png"
 index_img:
 
 # The banner image of archive page
-archive_img: "/img/archive_img.jpg"
+archive_img:
 
 # Note: tag page, not tags page
 tag_img:
@@ -804,13 +804,13 @@ beautify:
 font:
   global_font_size:
   code_font_size:
-  font_family:
-  code_font_family:
+  font_family: LXGW, -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+  code_font_family: Consolas, LXGW, "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font_family:
+  font_family: LXGW, -apple-system, BlinkMacSystemFont, "Segoe UI" , "Helvetica Neue" , Lato, Roboto, "PingFang SC" , "Microsoft JhengHei" , "Microsoft YaHei" , sans-serif
 
 # The setting of divider icon
 hr_icon:
@@ -1038,6 +1038,8 @@ inject:
    - <link rel="stylesheet" href="/css/breathing-light.css">
    - <link rel="stylesheet" href="/css/posttitle.css">
    - <link rel="stylesheet" href="/css/universe.css">
+   - <link rel="stylesheet" href="/css/neon-light.css">
+   - <link rel="stylesheet" href="/css/daynight.styl">
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
    - <script src="//at.alicdn.com/t/c/font_4786593_pl5dphfn0aq.js"></script>

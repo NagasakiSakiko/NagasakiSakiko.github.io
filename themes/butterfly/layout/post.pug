@@ -15,7 +15,10 @@ block content
       if (page.tags.length > 0 && theme.post_meta.post.tags)
         .post-meta__tag-list
           each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+            a(href=url_for(item.path)).post-meta__tags.icon
+              svg.post-meta.icon(style="height:12px;width:12px;fill:currentColor;position:relative;top:2px" aria-hidden="true")
+                use(xlink:href='#icon-biaoqian')
+              =item.name
       include includes/third-party/share/index.pug
         
     if theme.reward.enable && theme.reward.QR_code
