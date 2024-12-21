@@ -33,14 +33,14 @@
 
 
 /* 导航栏菜单鼠标移入字体放大 */
-#nav #search-button {
-    font-size: 14px; /* 或者您希望的默认大小 */
-}
-#nav #site-name:hover,
-#nav .menus_item:hover,
-#nav #search-button:hover{
-    font-size:28px;
-}
+/*#nav #search-button {*/
+/*    font-size: 14px; !* 或者您希望的默认大小 *!*/
+/*}*/
+/*#nav #site-name:hover,*/
+/*#nav .menus_item:hover,*/
+/*#nav #search-button:hover{*/
+/*    font-size:28px;*/
+/*}*/
 
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item {
@@ -114,7 +114,9 @@ div#archive {
     color: #ffffff;
 }
 
-svg.icon {
+
+/*社交图标大小*/
+svg.social_icon {
     width: 1.28em;
     height: 1.28em;
     vertical-align: -0.15em;
@@ -122,14 +124,7 @@ svg.icon {
     overflow: hidden;
 }
 
-svg.social_icon {
-    width: 1.20em;
-    height: 1.20em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-
+/*菜单栏图标大小*/
 svg.menu_icon {
     width: 1.28em;
     height: 1.28em;

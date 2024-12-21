@@ -50,7 +50,7 @@ code_blocks:
 #   icon: link || the description || color
 social:
   github: https://github.com/NagasakiSakiko || icon-github
-  email: mailto:tsahungye@outlook.com || icon-youxiang
+  email: mailto:tsahungye@outlook.com || icon-MAILBOX
   bilibili: https://space.bilibili.com/24643704 || icon-bilibili
 # --------------------------------------
 # Image Settings
@@ -1038,11 +1038,13 @@ inject:
    - <link rel="stylesheet" href="/css/breathing-light.css">
    - <link rel="stylesheet" href="/css/posttitle.css">
    - <link rel="stylesheet" href="/css/universe.css">
+#   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
-   - <script src="//at.alicdn.com/t/c/font_4786593_vuetv8hfu0b.js"></script>
+   - <script src="//at.alicdn.com/t/c/font_4786593_qy9pud9du3.js"></script>
    - <script async src="/js/nav.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
+#   - <script src="/js/page-header.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
