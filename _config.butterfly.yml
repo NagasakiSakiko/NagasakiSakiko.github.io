@@ -18,12 +18,12 @@ nav:
 
 menu:
   主页: / || icon-home
-  时间轴: /archives/ || icon-shijian
-  标签: /tags/ || icon-biaoqian
-  分类: /categories/ || icon-fenlei
-  链接|| icon-a-wangzhanlianjiehulianwang ||hide :
+  时间轴: /archives/ || icon-shijian1
+  标签: /tags/ || icon-tag
+  分类: /categories/ || icon-xinxingcao
+  链接|| icon-a-wangzhanlianjiehulianwang || hide :
     友情链接: /link/ || icon-lianjie
-    关于: /about/ || icon-xinxingcao
+    关于: /about/ || icon-feiji
 
 
 # --------------------------------------
@@ -66,7 +66,7 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: "/img/top_img.jpg"
+default_top_img: "/img/default.png"
 
 # The banner image of index page
 index_img:
@@ -291,7 +291,7 @@ aside:
     description:
     button:
       enable: true
-      icon: fab fa-github
+      icon:
       text: Follow Me
       link: https://github.com/NagasakiSakiko
   card_announcement:
@@ -1040,7 +1040,7 @@ inject:
    - <link rel="stylesheet" href="/css/universe.css">
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
-   - <script src="//at.alicdn.com/t/c/font_4786593_qy9pud9du3.js"></script>
+   - <script src="//at.alicdn.com/t/c/font_4786593_pl5dphfn0aq.js"></script>
    - <script async src="/js/nav.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>

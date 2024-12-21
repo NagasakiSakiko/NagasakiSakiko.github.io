@@ -23,14 +23,9 @@
 
 
 /* 去除导航栏选项中底下的蓝条 */
-#nav *::after{
-    background-color: transparent!important;
-}
-
-.search {
-    cursor: pointer;
-}
-
+/*#nav *::after{*/
+/*    background-color: transparent!important;*/
+/*}*/
 
 /* 导航栏菜单鼠标移入字体放大 */
 /*#nav #search-button {*/
@@ -114,6 +109,10 @@ div#archive {
     color: #ffffff;
 }
 
+/* 导航栏字体大小 */
+#nav .menus_item, #nav #site-name, #nav #search-button{
+    font-size: 24px;
+}
 
 /*社交图标大小*/
 svg.social_icon {
@@ -131,6 +130,11 @@ svg.menu_icon {
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+
+/*鼠标悬停在搜索按钮上时的指针样式设置为pointer*/
+#search-button:hover {
+    cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
 }
 
 .nav-fixed #nav{
@@ -250,3 +254,4 @@ center#name-container {
     display: inline-block;
     position: relative;
 }
+

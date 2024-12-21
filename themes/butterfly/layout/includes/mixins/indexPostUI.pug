@@ -30,7 +30,7 @@ mixin indexPostUI()
                     //i.far.fa-calendar-alt
                     a.faa-parent.animated-hover
                       svg.post-meta.icon(style="height:20px;width:20px;fill:currentColor;position:relative;top:5px" aria-hidden="true")
-                        use(xlink:href='#icon--rili')
+                        use(xlink:href='#icon-riqi')
                     span.article-meta-label=_p('post.created')
                     time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))= date(article.date, config.date_format)
                     span.article-meta-separator |
@@ -48,7 +48,7 @@ mixin indexPostUI()
                     //i(class=date_icon)
                     a.faa-parent.animated-hover
                       svg.post-meta.icon(style="height:20px;width:20px;fill:currentColor;position:relative;top:5px;" aria-hidden="true")
-                        use(xlink:href='#icon--rili')
+                        use(xlink:href='#icon-riqi')
                     span.article-meta-label= date_title
                     time(datetime=date_xml(article[date_type]) title=date_title + ' ' + full_date(article[date_type]))= date(article[date_type], config.date_format)
               if theme.post_meta.page.categories && article.categories.data.length > 0
@@ -57,8 +57,8 @@ mixin indexPostUI()
                   each item, index in article.categories.data
                     //i.fas.fa-inbox
                     a.faa-parent.animated-hover
-                      svg.post-meta.icon(style="height:20px;width:20px;fill:currentColor;position:relative;top:5px" aria-hidden="true")
-                        use(xlink:href='#icon-leibiexuanzhong')
+                      svg.post-meta.icon(style="height:20px;width:20px;fill:currentColor;position:relative;top:3px" aria-hidden="true")
+                        use(xlink:href='#icon-xinxingcao')
                     a(href=url_for(item.path)).article-meta__categories #[=item.name]
                     if index < article.categories.data.length - 1
                       i.fas.fa-angle-right.article-meta-link
@@ -68,8 +68,8 @@ mixin indexPostUI()
                   each item, index in article.tags.data
                     //i.fas.fa-tag
                     a.faa-parent.animated-hover
-                      svg.post-meta.icon(style="height:14px;width:14px;fill:currentColor;position:relative;top:3px" aria-hidden="true")
-                        use(xlink:href='#icon-a-tagbiaoqian')
+                      svg.post-meta.icon(style="height:20px;width:20px;fill:currentColor;position:relative;top:5px" aria-hidden="true")
+                        use(xlink:href='#icon-biaoqian')
                     a(href=url_for(item.path)).article-meta__tags #[=item.name]
                     if index < article.tags.data.length - 1
                       span.article-meta-link #[='•']
