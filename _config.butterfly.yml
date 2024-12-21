@@ -292,7 +292,7 @@ aside:
     button:
       enable: true
       icon:
-      text: Follow Me
+      text: 看看我的
       link: https://github.com/NagasakiSakiko
   card_announcement:
     enable: true
