@@ -66,7 +66,7 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: "/img/default.png"
+default_top_img:
 
 # The banner image of index page
 index_img:
@@ -1039,7 +1039,7 @@ inject:
    - <link rel="stylesheet" href="/css/posttitle.css">
    - <link rel="stylesheet" href="/css/universe.css">
    - <link rel="stylesheet" href="/css/neon-light.css">
-   - <link rel="stylesheet" href="/css/daynight.styl">
+   - <link rel="stylesheet" href="/css/daynight.css">
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
    - <script src="//at.alicdn.com/t/c/font_4786593_pl5dphfn0aq.js"></script>

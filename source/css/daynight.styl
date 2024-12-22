@@ -1,10 +1,80 @@
-@media (prefers-color-scheme: light) {
-  .header {
-    background-image: url('/img/default.png');
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .header {
-    background-image: url('/img/darkmode.png');
-  }
-}
+/* 白天模式头部背景 */
+#page-header
+  background-image url(/img/default.png)
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+
+/* 夜间模式头部背景 */
+html[data-theme="dark"] #page-header
+  background-image url(/img/darkmode.png)
+
+/* 白天模式底部背景 */
+#footer-wrap
+  background-image url(/img/default.png)
+  background-size cover
+  background-position center bottom
+  background-repeat no-repeat
+  position relative  /* 确保可以添加绝对定位的遮罩层 */
+
+  /* 添加黑色遮罩层 */
+  &::after
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background rgba(0, 0, 0, 0.5)  /* 半透明黑色遮罩 */
+    z-index 0  /* 确保遮罩层在背景之上 */
+   .footer_custom_text
+     position relative  /* 确保文字元素在遮罩层之上 */
+     z-index 1
+
+
+/* 夜间模式底部背景 */
+html[data-theme="dark"] #footer-wrap
+  background-image url(/img/darkmode.png)
+  background-size cover
+  background-position center bottom  /* 显示顶部背景图的底部 */
+  background-repeat no-repeat
+
+/* 针对手机端设置不同的背景图（白天模式） */
+@media screen and (max-width: 768px)
+  html[data-theme="light"] #page-header
+    background-image url(/img/mobileday.png)  /* 手机端的白天模式背景图 */
+    background-size cover
+    background-position center top
+    background-repeat no-repeat
+@media screen and (max-width: 768px)
+  html[data-theme="light"] #footer-wrap
+    background-image url(/img/mobileday.png)  /* 手机端背景图 */
+    background-size cover
+    background-position center bottom
+    background-repeat no-repeat
+
+
+/* 针对手机端设置不同的背景图（夜间模式） */
+@media screen and (max-width: 768px)
+  html[data-theme="dark"] #page-header
+    background-image url(/img/moblienight.png)  /* 手机端的夜间模式背景图 */
+    background-size cover
+    background-position center top
+    background-repeat no-repeat
+@media screen and (max-width: 768px)
+  html[data-theme="dark"] #footer-wrap
+    background-image url(/img/moblienight.png)  /* 手机端背景图 */
+    background-size cover
+    background-position center bottom
+    background-repeat no-repeat
+
+
+/* 确保底部内容在遮罩层之上 */
+#footer-wrap > *  /* 针对 footer-wrap 内的所有元素（例如文字、按钮等） */
+  position relative
+  z-index 1  /* 确保文字和其他内容在遮罩层之上 */
+
+
+/* 平滑过渡效果 */
+#page-header
+  transition background-image 0.5s ease-in-out
