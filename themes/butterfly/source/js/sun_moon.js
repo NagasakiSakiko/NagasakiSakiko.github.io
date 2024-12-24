@@ -1,3 +1,51 @@
+// // 页面加载时应用当前主题模式
+// document.addEventListener('DOMContentLoaded', function () {
+//     // 获取本地存储的主题模式
+//     const savedTheme = localStorage.getItem('theme') || 'light';
+//
+//     // 设置 html 和 body 根据模式
+//     if (savedTheme === 'dark') {
+//         document.documentElement.setAttribute('data-theme', 'dark');
+//         document.querySelector('body').classList.add('DarkMode');
+//     } else {
+//         document.documentElement.setAttribute('data-theme', 'light');
+//         document.querySelector('body').classList.remove('DarkMode');
+//     }
+//
+//     // 处理模式图标
+//     const modeIcon = document.getElementById('modeicon');
+//     if (modeIcon) {
+//         if (savedTheme === 'dark') {
+//             modeIcon.setAttribute('xlink:href', '#icon-sun');
+//         } else {
+//             modeIcon.setAttribute('xlink:href', '#icon-moon');
+//         }
+//     }
+// });
+
+// 如果 Butterfly 开启了 PJAX，再监听 pjax:complete
+document.addEventListener('pjax:complete', function () {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    // 设置 html 和 body 根据模式
+    if (savedTheme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('body').classList.add('DarkMode');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.querySelector('body').classList.remove('DarkMode');
+    }
+
+    // 处理模式图标
+    const modeIcon = document.getElementById('modeicon');
+    if (modeIcon) {
+        if (savedTheme === 'dark') {
+            modeIcon.setAttribute('xlink:href', '#icon-sun');
+        } else {
+            modeIcon.setAttribute('xlink:href', '#icon-moon');
+        }
+    }
+});
 function switchNightMode() {
     // 插入太阳月亮动画 DOM
     document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>');
@@ -45,7 +93,7 @@ function switchNightMode() {
                 data: function () {
                     this.$notify({
                         title: "关灯啦🌙",
-                        message: "当前已成功切换至夜间模式！",
+                        message: "明月装饰了你的窗子，你装饰了别人的梦。",
                         position: 'top-left',
                         offset: 50,
                         showClose: true,
@@ -75,7 +123,7 @@ function switchNightMode() {
                 data: function () {
                     this.$notify({
                         title: "开灯啦🌞",
-                        message: "当前已成功切换至白天模式！",
+                        message: "歌未竟，东方白。",
                         position: 'top-left',
                         offset: 50,
                         showClose: true,
@@ -92,4 +140,6 @@ function switchNightMode() {
     typeof FB === 'object' && window.loadFBComment();
     window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200);
 }
+
+
 
