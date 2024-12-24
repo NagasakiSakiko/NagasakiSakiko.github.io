@@ -23,12 +23,12 @@ function switchNightMode() {
         // 切换到夜间模式
         document.documentElement.setAttribute('data-theme', 'dark'); // 设置为夜间模式
         localStorage.setItem('theme', 'dark'); // 保存模式
-        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun'); // 切换为太阳图标
+        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon'); // 切换为太阳图标
     } else {
         // 切换到白天模式
         document.documentElement.setAttribute('data-theme', 'light'); // 设置为白天模式
         localStorage.setItem('theme', 'light'); // 保存模式
-        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon'); // 切换为月亮图标
+        document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun'); // 切换为月亮图标
     }
 
     // 获取太阳和月亮元素
@@ -80,7 +80,7 @@ function switchNightMode() {
             data: function () {
                 this.$notify({
                     title: currentMode === 'light' ? '关灯啦🌙' : '开灯啦🌞',
-                    message: currentMode === 'light' ? '当前已成功切换至夜间模式！' : '歌未竟，东方白',
+                    message: currentMode === 'light' ? '明月装饰了你的窗子，你装饰了别人的梦' : '歌未竟，东方白',
                     position: 'top-left',
                     offset: 50,
                     showClose: true,
