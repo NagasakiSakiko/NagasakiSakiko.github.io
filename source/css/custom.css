@@ -137,6 +137,10 @@ svg.menu_icon {
     cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
 }
 
+#nightmode-button:hover{
+    cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
+}
+
 .nav-fixed #nav{
     transform: translateY(58px)!important;
     -webkit-transform: translateY(58px)!important;

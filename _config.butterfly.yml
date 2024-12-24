@@ -1040,12 +1040,16 @@ inject:
    - <link rel="stylesheet" href="/css/universe.css">
    - <link rel="stylesheet" href="/css/neon-light.css">
    - <link rel="stylesheet" href="/css/daynight.css">
+   - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css">
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
-   - <script src="//at.alicdn.com/t/c/font_4786593_pl5dphfn0aq.js"></script>
+   - <script src="//at.alicdn.com/t/c/font_4786593_xsvu6co63e.js"></script>
    - <script async src="/js/nav.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
+   - <script src="/js/sun_moon.js" async></script>
+   - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+   - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
 #   - <script src="/js/page-header.js"></script>
 
 # CDN Settings
