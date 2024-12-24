@@ -14,11 +14,11 @@ nav#nav
       #search-button
         //span.site-page.social-icon.search
           //i.fas.fa-search.fa-fw
-        a.search.faa-parent.animated-hover(title="检索站内任何你想要的信息")
-          svg.faa-tada.icon(style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true")
+        a.search.faa-parent.animated-hover(title="检索站内任何你想要的信息", style="margin-right: 10px" )
+          svg.faa-tada.icon(style="height:25px;width:25px;fill:currentColor;position:relative;top:3px" aria-hidden="true")
             use(xlink:href='#icon-sousuo1')
     a.sun_moon.faa-parent.animated-hover(onclick='switchNightMode()',  title=_p('rightside.night_mode_title') id="nightmode-button")
-      svg.faa-tada(style="height:25px;width:25px;fill:currentColor;position:relative;top:5px", viewBox='0 0 1024 1024')
+      svg.faa-tada(style="height:25px;width:25px;fill:currentColor;position:relative;top:3px", viewBox='0 0 1024 1024')
         use#modeicon(xlink:href='#icon-moon')
     if theme.menu
       != partial('includes/header/menu_item', {}, {cache: true})
