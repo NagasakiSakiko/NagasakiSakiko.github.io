@@ -1,42 +1,19 @@
-// // 页面加载时应用当前主题模式
-// document.addEventListener('DOMContentLoaded', function () {
-//     // 获取本地存储的主题模式
-//     const savedTheme = localStorage.getItem('theme') || 'light';
-//
-//     // 设置 html 和 body 根据模式
-//     if (savedTheme === 'dark') {
-//         document.documentElement.setAttribute('data-theme', 'dark');
-//         document.querySelector('body').classList.add('DarkMode');
-//     } else {
-//         document.documentElement.setAttribute('data-theme', 'light');
-//         document.querySelector('body').classList.remove('DarkMode');
-//     }
-//
-//     // 处理模式图标
-//     const modeIcon = document.getElementById('modeicon');
-//     if (modeIcon) {
-//         if (savedTheme === 'dark') {
-//             modeIcon.setAttribute('xlink:href', '#icon-sun');
-//         } else {
-//             modeIcon.setAttribute('xlink:href', '#icon-moon');
-//         }
-//     }
-// });
+// 如果 Butterfly 开启了 PJAX，这里只用了PJAX监听：
+// 初始化主题（首次加载页面）
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'light'; // 默认是 'light'
 
-// 如果 Butterfly 开启了 PJAX，再监听 pjax:complete
-document.addEventListener('pjax:complete', function () {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // 设置 <html> 标签的 data-theme 属性
+    document.documentElement.setAttribute('data-theme', savedTheme);
 
-    // 设置 html 和 body 根据模式
+    // 设置 body 的 DarkMode 类
     if (savedTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.querySelector('body').classList.add('DarkMode');
+        document.body.classList.add('DarkMode');
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.querySelector('body').classList.remove('DarkMode');
+        document.body.classList.remove('DarkMode');
     }
 
-    // 处理模式图标
+    // 更新按钮图标
     const modeIcon = document.getElementById('modeicon');
     if (modeIcon) {
         if (savedTheme === 'dark') {
@@ -45,7 +22,14 @@ document.addEventListener('pjax:complete', function () {
             modeIcon.setAttribute('xlink:href', '#icon-moon');
         }
     }
-});
+}
+
+// 页面首次加载时应用主题
+document.addEventListener('DOMContentLoaded', initTheme);
+
+// 如果 Butterfly 开启了 PJAX，监听 pjax:complete 事件
+document.addEventListener('pjax:complete', initTheme);
+
 function switchNightMode() {
     // 插入太阳月亮动画 DOM
     document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>');
@@ -140,6 +124,3 @@ function switchNightMode() {
     typeof FB === 'object' && window.loadFBComment();
     window.DISQUS && document.getElementById('disqus_thread').children.length && setTimeout(() => window.disqusReset(), 200);
 }
-
-
-
