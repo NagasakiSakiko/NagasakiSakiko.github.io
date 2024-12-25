@@ -4,7 +4,6 @@
     --border-style: 1px solid rgb(169, 169, 169);
     --backdrop-filter: blur(5px) saturate(150%);
 }
-
 /* 一级菜单居中 */
 #nav .menus_items {
     position: absolute !important;
@@ -20,23 +19,6 @@
 .menus_items .menus_item:nth-child(2) .menus_item_child {
     left: -125px;
 }
-
-
-/* 去除导航栏选项中底下的蓝条 */
-/*#nav *::after{*/
-/*    background-color: transparent!important;*/
-/*}*/
-
-/* 导航栏菜单鼠标移入字体放大 */
-/*#nav #search-button {*/
-/*    font-size: 14px; !* 或者您希望的默认大小 *!*/
-/*}*/
-/*#nav #site-name:hover,*/
-/*#nav .menus_item:hover,*/
-/*#nav #search-button:hover{*/
-/*    font-size:28px;*/
-/*}*/
-
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item {
     background: var(--trans-light);
@@ -44,7 +26,6 @@
     border-radius: 25px;
     border: var(--border-style);
 }
-
 /* 首页侧栏卡片 */
 #aside-content .card-widget {
     background: var(--trans-light);
@@ -52,7 +33,6 @@
     border-radius: 18px;
     border: var(--border-style);
 }
-
 /* 文章页、归档页、普通页面 */
 div#post,
 div#page,
@@ -62,7 +42,6 @@ div#archive {
     border: var(--border-style);
     border-radius: 20px;
 }
-
 /* 导航栏 */
 #page-header.nav-fixed #nav {
     background: rgba(255, 255, 255, 0.75);
@@ -72,7 +51,6 @@ div#archive {
 [data-theme="dark"] #page-header.nav-fixed #nav {
     background: rgba(0, 0, 0, 0.7) !important;
 }
-
 /* 夜间模式遮罩 */
 [data-theme="dark"] #recent-posts > .recent-post-item,
 [data-theme="dark"] #aside-content .card-widget,
@@ -81,8 +59,6 @@ div#archive {
 [data-theme="dark"] div#page {
     background: var(--trans-dark);
 }
-
-
 /* 夜间模式页脚页头遮罩透明 */
 [data-theme="dark"] #footer::before {
     background: transparent !important;
@@ -90,7 +66,6 @@ div#archive {
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
-
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
@@ -98,7 +73,6 @@ div#archive {
 .read-mode div#post {
     background: rgba(158, 204, 171, 0.5) !important;
 }
-
 /* 夜间模式下的阅读模式 */
 [data-theme="dark"] .read-mode #aside-content .card-widget {
     background: rgba(25, 25, 25, 0.9) !important;
@@ -108,12 +82,10 @@ div#archive {
     background: rgba(25, 25, 25, 0.9) !important;
     color: #ffffff;
 }
-
 /* 导航栏字体大小 */
 #nav .menus_item, #nav #site-name, #nav #search-button{
     font-size: 24px;
 }
-
 /*社交图标大小*/
 svg.social_icon {
     width: 1.28em;
@@ -122,7 +94,6 @@ svg.social_icon {
     fill: currentColor;
     overflow: hidden;
 }
-
 /*菜单栏图标大小*/
 svg.menu_icon {
     width: 1.28em;
@@ -131,16 +102,13 @@ svg.menu_icon {
     fill: currentColor;
     overflow: hidden;
 }
-
 /*鼠标悬停在搜索按钮上时的指针样式设置为pointer*/
 #search-button:hover {
-    cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
+    cursor: pointer;
 }
-
 #nightmode-button:hover{
-    cursor: pointer; /* 或者你可以使用其他CSS指针样式，如zoom-in, grab等 */
+    cursor: pointer;
 }
-
 .nav-fixed #nav{
     transform: translateY(58px)!important;
     -webkit-transform: translateY(58px)!important;
@@ -196,7 +164,6 @@ svg.menu_icon {
 #nav{
     padding: 0 20px;
 }
-
 /* 修复滚动显示标题居中 */
 center#name-container {
     position: absolute !important;
@@ -208,7 +175,6 @@ center#name-container {
         display: none;
     }
 }
-
 .card-info-avatar .author-status-box {
     position: absolute;
     bottom: 0;
@@ -221,12 +187,10 @@ center#name-container {
     transition: 0.4s;
     overflow: hidden;
 }
-
 [data-theme="dark"] .card-info-avatar .author-status-box {
     background-color: #222222f2;
     border: 1px solid #5c6060;
 }
-
 .card-info-avatar .author-status-box .author-status {
     display: flex;
     align-items: center;
@@ -234,7 +198,6 @@ center#name-container {
     height: 28px;
     padding: 0 5px;
 }
-
 .card-info-avatar .author-status-box:hover {
     width: 105px;
 }
@@ -243,7 +206,6 @@ center#name-container {
     width: 105px;
     margin-left: 4px;
 }
-
 .card-info-avatar .author-status-box .author-status span {
     width: 0;
     font-size: 12px;
@@ -253,12 +215,11 @@ center#name-container {
     white-space: nowrap;
     transition: 0.4s;
 }
-
 .card-widget .card-info-avatar {
     display: inline-block;
     position: relative;
 }
-
+/*字体修改*/
 @font-face {
     /* 为载入的字体取名字(随意) */
     font-family: 'LXGW';
