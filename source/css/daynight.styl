@@ -8,25 +8,11 @@
 html[data-theme="dark"] #page-header
   background-image url(/img/top_img.jpg)
 /* 白天模式底部背景 */
-#footer-wrap
+#footer
   background-image url(/img/default.webp)
   background-size cover
   background-position center bottom
   background-repeat no-repeat
-  position relative  /* 确保可以添加绝对定位的遮罩层 */
-  /* 添加黑色遮罩层 */
-  &::after
-    content ''
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    background rgba(0, 0, 0, 0.5)  /* 半透明黑色遮罩 */
-    z-index 0  /* 确保遮罩层在背景之上 */
-   .footer_custom_text
-     position relative  /* 确保文字元素在遮罩层之上 */
-     z-index 1
 /* 夜间模式底部背景 */
 html[data-theme="dark"] #footer-wrap
   background-image url(/img/top_img.jpg)

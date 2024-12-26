@@ -175,6 +175,7 @@ center#name-container {
         display: none;
     }
 }
+/*信息卡片头像状态*/
 .card-info-avatar .author-status-box {
     position: absolute;
     bottom: 0;
@@ -232,4 +233,7 @@ center#name-container {
     font-style: normal;
     /* 定义显示样式 */
     font-display: block;
+}
+.site-name {
+    font-size: 24px; /* 你希望的字体大小 */
 }
