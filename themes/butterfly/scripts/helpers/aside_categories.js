@@ -75,8 +75,7 @@ hexo.extend.helper.register('aside_categories', function (categories, options = 
             <a class="faa-parent animated-hover">
                 <svg class="faa-tada icon"style="height:25px;width:25px;fill:currentColor;position:relative;top:5px;margin-right:0px" aria-hidden="true">
                   <use xlink:href='#icon-xinxingcao'></use>
-                </svg><span>${this._p('aside.card_categories')}</span>
-            </a>
+                </svg></a><span>${this._p('aside.card_categories')}</span>
             ${moreButton}
           </div>
           <ul class="card-category-list${isExpand && list.result ? ' expandBtn' : ''}" id="aside-cat-list">
