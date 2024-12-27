@@ -20,7 +20,7 @@
     left: -125px;
 }
 /* 首页文章卡片 */
-#recent-posts > .recent-post-item {
+.recent-post-item {
     background: var(--trans-light);
     backdrop-filter: var(--backdrop-filter);
     border-radius: 25px;
