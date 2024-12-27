@@ -1047,6 +1047,7 @@ inject:
    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script>
    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script>
    - <script src="//at.alicdn.com/t/c/font_4786593_xsvu6co63e.js"></script>
+   - <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    - <script async src="/js/nav.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
