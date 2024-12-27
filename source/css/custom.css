@@ -110,7 +110,7 @@ svg.menu_icon {
     cursor: pointer;
 }
 /* 标题增强 */
-#site-name::before {
+.site-name::before {
     opacity: 0;
     background-color: #b2aec6 !important;
     border-radius: 8px;
@@ -129,18 +129,18 @@ svg.menu_icon {
     width: 100%;
     height: 100%;
     content: "\f015";
-    box-shadow: 0 0 5px v#b2aec6;
-    font-family: "LXGW";
+    box-shadow: 0 0 5px #b2aec6;
+    font-family: "Font Awesome 6 Free";
     text-align: center;
     color: white;
     line-height: 34px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/
-    font-size: 18px; /*根据个人喜好*/
+    font-size: 24px; /*根据个人喜好*/
 }
-#site-name:hover::before {
+.site-name:hover::before {
     opacity: 1;
     scale: 1.03;
 }
-#site-name {
+.site-name {
     position: relative;
     font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
@@ -205,6 +205,7 @@ center#name-container {
     /*width: fit-content !important;*/
     /*left: 42% !important;*/
     position: absolute;
+    font-size: 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -272,7 +273,4 @@ center#name-container {
     font-style: normal;
     /* 定义显示样式 */
     font-display: block;
-}
-.site-name {
-    font-size: 24px; /* 你希望的字体大小 */
 }
