@@ -83,7 +83,7 @@ div#archive {
     color: #ffffff;
 }
 /* 导航栏字体大小 */
-#nav .menus_item, #nav #site-name, #nav #search-button{
+#nav .menus_item, #nav .site-name, #nav #search-button{
     font-size: 24px;
 }
 /*社交图标大小*/
@@ -133,8 +133,8 @@ svg.menu_icon {
     font-family: "Font Awesome 6 Free";
     text-align: center;
     color: white;
-    line-height: 34px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/
-    font-size: 24px; /*根据个人喜好*/
+    line-height: 28px; /*如果有溢出或者垂直不居中的现象微调一下这个参数*/
+    font-size: 18px; /*根据个人喜好*/
 }
 .site-name:hover::before {
     opacity: 1;
@@ -177,7 +177,7 @@ svg.menu_icon {
     -o-transition: all 0.3s;
     opacity: 0;
     box-shadow: 0 0 3px #b2aec6;
-    line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/
+    line-height: 50px; /*如果垂直位置不居中可以微调此值，也可以删了*/
 }
 #page-name:hover:before {
     opacity: 1;
