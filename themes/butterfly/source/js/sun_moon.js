@@ -1,13 +1,17 @@
 // 如果 Butterfly 开启了 PJAX，这里只用了PJAX监听：
 // 初始化主题（首次加载页面）
+// 页面首次加载时应用主题
+document.addEventListener('DOMContentLoaded', initTheme);
+// 如果 Butterfly 开启了 PJAX，监听 pjax:complete 事件
+document.addEventListener('pjax:complete', initTheme);
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light'; // 默认是 'light'
+    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
 
     // 设置 <html> 标签的 data-theme 属性
-    document.documentElement.setAttribute('data-theme', savedTheme);
+    document.documentElement.setAttribute('data-theme', nowMode);
 
     // 设置 body 的 DarkMode 类
-    if (savedTheme === 'dark') {
+    if (nowMode === 'dark') {
         document.body.classList.add('DarkMode');
     } else {
         document.body.classList.remove('DarkMode');
@@ -16,7 +20,7 @@ function initTheme() {
     // 更新按钮图标
     const modeIcon = document.getElementById('modeicon');
     if (modeIcon) {
-        if (savedTheme === 'dark') {
+        if (nowMode === 'dark') {
             modeIcon.setAttribute('xlink:href', '#icon-sun');
         } else {
             modeIcon.setAttribute('xlink:href', '#icon-moon');
@@ -24,11 +28,7 @@ function initTheme() {
     }
 }
 
-// 页面首次加载时应用主题
-document.addEventListener('DOMContentLoaded', initTheme);
 
-// 如果 Butterfly 开启了 PJAX，监听 pjax:complete 事件
-document.addEventListener('pjax:complete', initTheme);
 
 function switchNightMode() {
     // 插入太阳月亮动画 DOM
