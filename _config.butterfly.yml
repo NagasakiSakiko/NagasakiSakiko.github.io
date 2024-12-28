@@ -49,7 +49,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  github: https://github.com/NagasakiSakiko || icon-github
+  weibo: https://weibo.com/u/7971639321 || icon-xinlangweibo
   email: mailto:tsahungye@outlook.com || icon-MAILBOX
   bilibili: https://space.bilibili.com/24643704 || icon-bilibili
 # --------------------------------------
@@ -1046,7 +1046,7 @@ inject:
   bottom:
    - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script>
    - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script>
-   - <script src="//at.alicdn.com/t/c/font_4786593_xsvu6co63e.js"></script>
+   - <script src="//at.alicdn.com/t/c/font_4786593_3vnr757mbqb.js"></script>
    - <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    - <script async src="/js/nav.js"></script>
    - <canvas id="universe"></canvas>
