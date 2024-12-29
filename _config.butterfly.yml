@@ -1048,10 +1048,11 @@ inject:
    - <script src="https://unpkg.com/element-ui/lib/index.js"></script>
    - <script src="//at.alicdn.com/t/c/font_4786593_3vnr757mbqb.js"></script>
    - <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   - <script async src="/js/nav.js"></script>
+   - <script async data-pjax src="/js/nav.js"></script>
+   - <script data-pjax src="/js/sun_moon.js" async></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
-   - <script src="/js/sun_moon.js" async></script>
+
 #   - <script src="/js/page-header.js"></script>
 
 # CDN Settings

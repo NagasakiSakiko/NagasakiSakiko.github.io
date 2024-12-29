@@ -1,5 +1,5 @@
 ---
-title: 给butterfly主题增加手机电脑端背景和实现昼夜交替模式
+title: 昼夜交替和头部图修改
 date : 2024-12-25
 description: 
 cover: https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20241225-1.png

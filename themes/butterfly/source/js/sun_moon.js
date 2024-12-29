@@ -1,35 +1,27 @@
 // 如果 Butterfly 开启了 PJAX，这里只用了PJAX监听：
 // 初始化主题（首次加载页面）
-// 页面首次加载时应用主题
-document.addEventListener('DOMContentLoaded', initTheme);
-// 如果 Butterfly 开启了 PJAX，监听 pjax:complete 事件
 document.addEventListener('pjax:complete', initTheme);
+document.addEventListener('DOMContentLoaded', initTheme);
 function initTheme() {
-    const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
-
-    // 设置 <html> 标签的 data-theme 属性
-    document.documentElement.setAttribute('data-theme', nowMode);
-
+    const savedTheme = localStorage.getItem('theme') || 'light'; // 默认是 'light'
+// 设置 <html> 标签的 data-theme 属性
+    document.documentElement.setAttribute('data-theme', savedTheme);
     // 设置 body 的 DarkMode 类
-    if (nowMode === 'dark') {
+    if (savedTheme === 'dark') {
         document.body.classList.add('DarkMode');
     } else {
         document.body.classList.remove('DarkMode');
     }
-
     // 更新按钮图标
     const modeIcon = document.getElementById('modeicon');
     if (modeIcon) {
-        if (nowMode === 'dark') {
+        if (savedTheme === 'dark') {
             modeIcon.setAttribute('xlink:href', '#icon-sun');
         } else {
             modeIcon.setAttribute('xlink:href', '#icon-moon');
         }
     }
 }
-
-
-
 function switchNightMode() {
     // 插入太阳月亮动画 DOM
     document.querySelector('body').insertAdjacentHTML('beforeend', '<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"><div id="sun"></div><div id="moon"></div></div></div>');
@@ -54,9 +46,7 @@ function switchNightMode() {
             }, 1000);
         }, 2000);
     });
-
     const nowMode = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-
     if (nowMode === 'light') {
         // 设置太阳月亮透明度
         document.getElementById("sun").style.opacity = "1";
@@ -118,7 +108,6 @@ function switchNightMode() {
             });
         }, 2000);
     }
-
     // 处理一些特定情况
     typeof utterancesTheme === 'function' && utterancesTheme();
     typeof FB === 'object' && window.loadFBComment();
