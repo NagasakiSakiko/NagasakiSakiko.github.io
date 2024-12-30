@@ -5,7 +5,7 @@
 # Site
 title: Tsaihungye🍃
 subtitle:
-description: '萍水相逢，尽是他乡之客'
+description: '弱い私は もう死にました'
 keywords:
 author: Tsai_hungye🍃
 language: zh-CN
@@ -110,6 +110,23 @@ search:
   field: post
   format: html
   limit: 1000
+
+wowjs:
+  enable: true #控制动画开关。true是打开，false是关闭
+  priority: 10 #过滤器优先级
+  mobile: false #移动端是否启用，默认移动端禁用
+  animateitem:
+    - class: recent-post-item #必填项，需要添加动画的元素的class
+      style: animate__zoomIn #必填项，需要添加的动画
+      duration: 2s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 1s #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 100 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
+    - class: card-widget
+      style: animate__zoomIn
+  animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
 
 tag_plugins:
   enable: true # 开关
