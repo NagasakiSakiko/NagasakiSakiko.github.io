@@ -3,6 +3,7 @@ title: 在困境中寻找希望的故事
 date : 2024-12-17 16:54:37
 description: 一些随处感想
 cover: https://pica.zhimg.com/v2-d8e1c695f6f11a6ba6e1d9c465a541c6_r.jpg
+swiper_index: 1
 categories: 
   - 碎碎念
 tags: 
