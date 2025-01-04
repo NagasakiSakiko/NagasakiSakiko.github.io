@@ -610,7 +610,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-ten-henna.vercel.app/
+  envId: https://twikoo.tsaihungye.com/
   region:
   # Use Twikoo visitor count as the page view count
   visitor: false
