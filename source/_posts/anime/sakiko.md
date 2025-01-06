@@ -1,6 +1,6 @@
 ---
 title: 祥子，你幸福吗
-date : 2025-01-02
+date : 2025-01-06
 description: 对2024年过去和展望
 cover: https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20250106-1.jpg
 categories: 
