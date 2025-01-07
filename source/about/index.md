@@ -13,7 +13,7 @@ aside: false
 - <strong>邮箱</strong>：<a href="mailto:(tsaihungye@outlook.com">tsaihungye@outlook.com</a>
 - <strong>擅长</strong>：吃喝嫖赌
 
-<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/aaf84b3b1c06e4b858f8728683198d68.png"/>
+<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/aaf84b3b1c06e4b858f8728683198d68.png" width="200" height="200"/>
 </div>
 
 # 💡我的想法
