@@ -20,7 +20,7 @@ tags:
 
 两人因成为命运的共同体的心思走在了一起，在名为ceychic的美梦中沉溺。
 
-![](https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20250106-4%20(1).jpg)
+![](https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20250106-4.jpg)
 
 即使在祥子父亲被家族抛弃的时候，祥子搬出去和父亲住的时候打工打算去参加crychic的排练时候还开心的喊了一声soyo，还没来的及回素世一句：
 > 「我能过去」
@@ -32,9 +32,9 @@ tags:
 
 这时候祥子已经屏蔽了素世，她也见不到素世这句话。
 
-后面也就发生著名的飞鸟山之战，素世苦苦哀求想挽留祥子，遭祥子无情的拒绝。想必祥子也很痛苦，因为家庭的变故不得不告别crychic和素世切割。
+后来发生的飞鸟山之战，素世苦苦哀求想挽留祥子，遭祥子无情的拒绝。想必祥子也很痛苦，因为家庭的变故不得不告别crychic和素世切割。
 
-![](https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/BanG_Dream!_It's_MyGO!!!!!_08205410%20(1).jpg)
+![](https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/BanG_Dream!_It's_MyGO!!!!!_08205410.jpg)
 
 如果这个故事的名字叫crychic
 
