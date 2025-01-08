@@ -3,7 +3,6 @@ title: 关于
 date: 2024-12-28
 type: 'about'
 top_img:
-aside: false
 ---
 # 📖关于本人
 - <strong>名称</strong>： Tsai Hungye🍃
