@@ -4,6 +4,10 @@ date: 2024-12-28
 type: 'about'
 top_img:
 ---
+
+<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/aaf84b3b1c06e4b858f8728683198d68.png" width="200" height="200"/>
+</div>
+
 # 📖关于本人
 - <strong>名称</strong>： Tsai Hungye🍃
 - <strong>昵称</strong>： Nagasaki Sakiko
@@ -11,9 +15,6 @@ top_img:
 - <strong>身份</strong>：是想🐭的社畜一枚呀
 - <strong>邮箱</strong>：<a href="mailto:(tsaihungye@outlook.com">tsaihungye@outlook.com</a>
 - <strong>擅长</strong>：吃喝嫖赌
-
-<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/aaf84b3b1c06e4b858f8728683198d68.png" width="200" height="200"/>
-</div>
 
 # 💡我的想法
 - <strong>搭建初衷</strong>：自己平时一个人待着的时候，总想说点什么，但又害怕说太多，让我的好朋友们感到烦恼，便有了搭建一个网站的想法，想要在自己的天地说话。还可以搭配成自己喜欢的样子，这很酷。

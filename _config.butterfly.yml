@@ -56,10 +56,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.ico
+favicon: /favicon.ico
 
 avatar:
-  img: /img/avatar.jpg
+  img: /avatar.jpg
   effect: false
 
 # Disable all banner images
