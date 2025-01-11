@@ -1052,7 +1052,10 @@ inject:
    - <script async src="/js/sun_moon.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
-
+   - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+   - <script>
+   - new LingQue.Monitor().init({id:"3KuCPzraWBOYuGGp"});
+   - </script>
 #   - <script src="/js/page-header.js"></script>
 
 # CDN Settings
