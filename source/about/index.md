@@ -34,7 +34,7 @@ top_img:
 - 主题：[butterfly v4.9.0](https://github.com/jerryc127/hexo-theme-butterfly)
 - 评论系统： [Twikoo](https://twikoo.js.org/)系统 || [Vercel](https://vercel.com/) 部署 || [MongoDB](https://www.mongodb.com/zh-cn)提供存储服务
 - 图床： [picgo](https://picgo.github.io/PicGo-Doc/zh/guide/)上传 || [GitHub](https://github.com/)部署
-- 部署：[GitHub](https://github.com/)
+- 部署：[GitHub](https://github.com/) || [阿里云](https://www.alibabacloud.com/)
 - 弹窗框架支持：[Element](https://github.com/ElemeFE/element) || [Vue](https://github.com/vuejs/vue)
 - 版权声明：详见[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
