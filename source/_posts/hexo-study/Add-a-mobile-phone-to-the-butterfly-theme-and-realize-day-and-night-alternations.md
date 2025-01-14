@@ -1,13 +1,15 @@
 ---
 title: 昼夜交替和头部图修改
-date : 2024-12-25
-description: 
-cover: https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20241225-1.png
-categories: 
+cover: >-
+  https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20241225-1.png
+categories:
   - Hexo学习
-tags: 
+tags:
   - Hexo
   - 背景
+abbrlink: 3961815d
+date: 2024-12-25 00:00:00
+description:
 ---
 参考大佬的教程如何进行修改背景的代码，实现手机端和电脑端实现不同背景，以及实现最后的昼夜交替。
 # 背景图片更换

@@ -1,13 +1,15 @@
 ---
 title: 新年快乐
-date : 2025-01-02
 description: 对2024年过去和展望
-cover: https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/v2-a6a9005d545a0fbeeb7159d0ba310787_r.jpg
+cover: >-
+  https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/v2-a6a9005d545a0fbeeb7159d0ba310787_r.jpg
 swiper_index: 2
-categories: 
+categories:
   - 碎碎念
-tags: 
+tags:
   - 新年
+abbrlink: 2b9cc7eb
+date: 2025-01-02 00:00:00
 ---
 随着钟声响起，新的一年开始了。先给大家拜一个晚年！
 跨年是和好麻吉们在视频度过，回想起当时一起去了一趟北京通宵吃海底捞去看了小时候在电视上才看到的升旗，虽然疲惫但也快乐。如今和他们身在祖国的五湖四海。通过视频通话感觉他们就在我身边，那天畅聊很久，可以看到上班的老登们都憔悴不少。

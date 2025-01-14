@@ -1,22 +1,30 @@
 ---
 title: 如何进行多主机上传Hexo
-date : 2024-12-14 14:47:20
 description: 使用Hexo在多台主机上同步博客的教程。
-cover: https://picsum.photos/id/60/1920/1200
-categories: 
+cover: 'https://picsum.photos/id/60/1920/1200'
+categories:
   - Hexo学习
-tags: 
+tags:
   - Hexo
   - 同步
+abbrlink: f2ac8e4e
+date: 2024-12-14 14:47:20
 ---
 参考了网络教程，这次来写一个如何多主机上传电脑。这样我就不用找好多好多网站。
 # 老电脑的配置步骤
 ## GitHub分支设置
 首先在打开GitHub创建一个分支，比如我创建了`hexo`分支。
-![创建分支](/img/How-to-Upload-Hexo-to-Multiple-Hosts/Create-a-Hexo-branch.png)
+
+<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/Create-a-Hexo-branch.png" alt="创建分支"/>
+</div>
+
 这个时候会将`master`的分支复制到`hexo`。
 将其设定为默认分支。
-![设定默认分支](/img/How-to-Upload-Hexo-to-Multiple-Hosts/Set-default-branch.png)
+
+<div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/Set-default-branch.png" alt="设定默认分支"/>
+</div>
+
+
 ## 克隆与初始化
 将新建的hexo分支克隆克隆到本地,然后进入该目录
 ```

@@ -109,6 +109,7 @@ svg.menu_icon {
 #nightmode-button:hover{
     cursor: pointer;
 }
+
 /* 标题增强 */
 .site-name::before {
     opacity: 0;
@@ -388,4 +389,46 @@ center#name-container {
 }
 .page:not(.page.home) .aside-content {
     display: none;
+}
+
+.container a:hover {
+    background-color: #b2aec6; /* 设置背景颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 2px 4px; /* 内边距 */
+    transition: all 0.3s ease; /* 平滑过渡 */
+    color: #f6f8fa; /* 文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 可选，阴影效果 */
+}
+.post-content a:hover {
+    background-color: #b2aec6; /* 设置背景颜色 */
+    border-radius: 5px; /* 圆角 */
+    padding: 2px 4px; /* 内边距 */
+    transition: all 0.3s ease; /* 平滑过渡 */
+    color: #f6f8fa; /* 文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 可选，阴影效果 */
+}
+/* 默认目录链接样式 */
+.toc a {
+    display: inline-block; /* 使链接为块状元素 */
+    transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease; /* 平滑动画效果 */
+}
+
+/* 悬停时的放大效果 */
+.toc a:hover:not(.active) {
+    transform: scale(1.05); /* 放大 5% */
+    background-color: rgba(178, 174, 198, 0.1); /* 背景色变化 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+.toc a:hover:not(.active) .toc-text,
+.toc a:hover:not(.active) .toc-number {
+    color: #b2aec6; /* 修改编号和正文文字颜色 */
+}
+.toc-link.active {
+    background-color: transparent; /* 不需要背景色 */
+    color: inherit; /* 保持默认文字颜色 */
+    box-shadow: none; /* 无阴影 */
+    transform: none; /* 无放大效果 */
 }

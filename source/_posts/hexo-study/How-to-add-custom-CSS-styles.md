@@ -1,13 +1,14 @@
 ---
 title: 如何添加自定义的css样式
-date : 2024-12-20
 description: 添加自定义的css样式
-cover: https://picsum.photos/id/60/1920/1200
-categories: 
+cover: 'https://picsum.photos/id/60/1920/1200'
+categories:
   - Hexo学习
-tags: 
+tags:
   - Hexo
   - 修改
+abbrlink: 71e325c3
+date: 2024-12-20 00:00:00
 ---
 #写在前言
 
