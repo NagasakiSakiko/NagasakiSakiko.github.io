@@ -432,3 +432,7 @@ center#name-container {
     box-shadow: none; /* 无阴影 */
     transform: none; /* 无放大效果 */
 }
+.loading-img {
+    background: url(/avatar.jpg) no-repeat center center;
+    background-size: cover;
+}
