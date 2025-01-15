@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Markdown学习汇总</title>
+      <link href="/4a8a2d58/"/>
+      <url>/4a8a2d58/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。 通过学习markdown的书写方式来写博客文章。</p><h1 id="Markdown语法自带格式"><a href="#Markdown语法自带格式" class="headerlink" title="Markdown语法自带格式"></a>Markdown语法自带格式</h1><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>首先让我们来看看markdown的快捷键吧</p><div class="table-container"><table><thead><tr><th style="text-align:center">功能</th><th style="text-align:center">快捷键</th></tr></thead><tbody><tr><td style="text-align:center">加粗</td><td style="text-align:center">Ctrl + B</td></tr><tr><td style="text-align:center">斜体</td><td style="text-align:center">Ctrl + I</td></tr><tr><td style="text-align:center">引用</td><td style="text-align:center">Ctrl + Q</td></tr><tr><td style="text-align:center">插入链接</td><td style="text-align:center">Ctrl + L</td></tr><tr><td style="text-align:center">插入代码</td><td style="text-align:center">Ctrl + K</td></tr><tr><td style="text-align:center">插入图片</td><td style="text-align:center">Ctrl + G</td></tr><tr><td style="text-align:center">提升标题</td><td style="text-align:center">Ctrl + H</td></tr><tr><td style="text-align:center">有序列表</td><td style="text-align:center">Ctrl + O</td></tr><tr><td style="text-align:center">无序列表</td><td style="text-align:center">Ctrl + U</td></tr><tr><td style="text-align:center">横线</td><td style="text-align:center">Ctrl + R</td></tr><tr><td style="text-align:center">撤销</td><td style="text-align:center">Ctrl + Z</td></tr><tr><td style="text-align:center">重做</td><td style="text-align:center">Ctrl + Y</td></tr></tbody></table></div><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h3 id="标题语法"><a href="#标题语法" class="headerlink" title="标题语法"></a>标题语法</h3><p>要创建标题，请在单词或短语前面添加井号<code>#</code>。<code>#</code>的数量代表了标题的级别。例如，添加三个<code>#</code>表示创建一个三级标题 <code>&lt;h3&gt;</code>(例如：<code>### My Header</code>)。<br><br>不同的 Markdown 应用程序处理<code>#</code>和标题之间的空格方式并不一致。为了兼容考虑，请用一个空格在<code>#</code>和标题之间进行分隔。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br></pre></td></tr></table></figure><br>还可以在文本下方添加任意数量的 == 号来标识一级标题，或者 — 号来标识二级标题。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Heading level 1</span><br><span class="line">===============</span><br><span class="line"></span><br><span class="line">Heading level 2</span><br><span class="line">---------------</span><br></pre></td></tr></table></figure></p><h3 id="文字样式"><a href="#文字样式" class="headerlink" title="文字样式"></a>文字样式</h3><div class="table-container"><table><thead><tr><th style="text-align:center">Markdown语法</th><th style="text-align:center">预览效果</th></tr></thead><tbody><tr><td style="text-align:center"><code>&lt;u&gt;下划线演示&lt;/u&gt;</code></td><td style="text-align:center"><u>下划线演示</u></td></tr><tr><td style="text-align:center"><code>文字**加粗**演示</code></td><td style="text-align:center">文字<strong>加粗</strong>演示</td></tr><tr><td style="text-align:center"><code>文字*斜体*演示</code></td><td style="text-align:center">文字<em>斜体</em>演示</td></tr><tr><td style="text-align:center"><code>文本</code>高亮<code>演示</code></td><td style="text-align:center">文本<code>高亮</code>演示</td></tr><tr><td style="text-align:center"><code>文本~~删除~~线演示</code></td><td style="text-align:center">文本<del>删除</del>线演示</td></tr><tr><td style="text-align:center"><code>&lt;font size = 5&gt;5号字&lt;/font&gt;</code></td><td style="text-align:center"><font size = 5>5号字</font></td></tr><tr><td style="text-align:center"><code>&lt;font face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;</code></td><td style="text-align:center"><font face="黑体">黑体</font></td></tr><tr><td style="text-align:center"><code>&lt;font color=blue&gt;蓝色&lt;/font&gt;</code></td><td style="text-align:center"><font color=blue>蓝色</font></td></tr><tr><td style="text-align:center"><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=MistyRose&gt;这里的背景色是：MistyRosen，此处输入任意想输入的内容&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></td><td style="text-align:center"><table><tr><td bgcolor=MistyRose>这里的背景色是：MistyRosen，此处输入任意想输入的内容</td></tr></table></td></tr></tbody></table></div><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;  Java</span><br><span class="line">&gt; 二级引用演示</span><br><span class="line">&gt; MySQL</span><br><span class="line">&gt; &gt;外键</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;事务</span><br><span class="line">&gt; &gt;</span><br><span class="line">&gt; &gt;**行级锁**(引用内部一样可以用格式)</span><br><span class="line">&gt; </span><br><span class="line">&gt; ....</span><br></pre></td></tr></table></figure><blockquote><p> Java<br>二级引用演示<br>MySQL</p><blockquote><p>外键</p><p>事务</p><p><strong>行级锁</strong>(引用内部一样可以用格式)</p></blockquote><p>….</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> markdown </category>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>🍃祥子，你幸福吗</title>
       <link href="/1cad6c87/"/>
       <url>/1cad6c87/</url>
@@ -278,9 +299,9 @@
       
         <tags>
             
-            <tag> 流水账 </tag>
-            
             <tag> 休息 </tag>
+            
+            <tag> 流水账 </tag>
             
         </tags>
       
