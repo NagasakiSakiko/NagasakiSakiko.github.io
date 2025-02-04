@@ -108,7 +108,6 @@ deploy:
   type: git
   repository:
     hexo: git@tsaihungye.com:/www/repo/hexo.git
-    cn: git@tsaihungye.icu:/www/repo/hexo.git
     github: git@github.com:NagasakiSakiko/NagasakiSakiko.github.io.git
   branch: master
 
