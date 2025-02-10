@@ -264,7 +264,10 @@ footer:
   owner:
     enable: true
     since: 2024
-  custom_text: 人生不相见 动如参与商
+  custom_text: 人生不相见 动如参与商<br>
+    <img src="https://haiyong.site/img/icp.png">
+    <a href="https://beian.miit.gov.cn/#/Integrated/index" style="color:white" target="_blank">津ICP备2025028919号</a>
+
   # Copyright of theme and framework
   copyright: false
 
