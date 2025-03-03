@@ -436,3 +436,26 @@ center#name-container {
     background: url(/avatar.jpg) no-repeat center center;
     background-size: cover;
 }
+
+/* 文章置顶滚动栏(店长) */
+.blog-slider {
+    height: 16.8em !important;
+}
+
+.blog-slider__img {
+    width: 40% !important;
+    height: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .blog-slider {
+        padding: 0 !important;
+    }
+
+    .blog-slider__img {
+        width: 100% !important;
+        height: 40% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
