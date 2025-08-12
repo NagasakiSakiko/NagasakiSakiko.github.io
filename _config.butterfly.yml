@@ -1076,6 +1076,7 @@ CDN:
   custom_format:
 
   option:
+    twikoo: https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.44/twikoo.min.js
   # abcjs_basic_js:
   # activate_power_mode:
   # algolia_js:
@@ -1135,7 +1136,7 @@ local_search:
   # snackbar:
   # snackbar_css:
   # translate:
-  twikoo: https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.44/twikoo.min.js
+  # twikoo: https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.44/twikoo.min.js
   # typed:
   # utils:
   # valine:
