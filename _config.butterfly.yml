@@ -1135,7 +1135,7 @@ local_search:
   # snackbar:
   # snackbar_css:
   # translate:
-  # twikoo:
+  twikoo: https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.44/twikoo.min.js
   # typed:
   # utils:
   # valine:
