@@ -1,9 +1,9 @@
 ---
-title: 风雨无阻
+title: 👋风雨无阻
 description: 你说这扯不扯
 cover: 'https://cdn.jsdelivr.net/gh/NagasakiSakiko/picture@main/img/20250811-1.png'
 categories:
-  - 碎碎念
+  - 🐘抽象
 tags:
   - 冬雪莲
   - 弗雷尔卓德礼仪
