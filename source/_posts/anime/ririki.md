@@ -1,5 +1,5 @@
 ---
-title: 立希，明天见
+title: 🐧立希，明天见
 description: 立希，明天见
 cover: >-
   https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20250815-1.jpg
