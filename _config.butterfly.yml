@@ -1044,15 +1044,15 @@ inject:
 
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
-   - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script>
-   - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script>
+   - <script async src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+   - <script async src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.min.js"></script>
    - <script src="//at.alicdn.com/t/c/font_4786593_3vnr757mbqb.js"></script>
    - <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    - <script async src="/js/nav.js" data-pjax="" defer=""></script>
    - <script async src="/js/sun_moon.js"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
-   - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+   - <script src="https://cdn.jsdelivr.net/npm/vitepress-plugin-51la@0.1.0/dist/index.min.js" crossorigin="anonymous"></script>
    - <script>
    - new LingQue.Monitor().init({id:"3KuCPzraWBOYuGGp"});
    - </script>
@@ -1076,7 +1076,8 @@ CDN:
   custom_format:
 
   option:
-    twikoo: https://cdnjs.cloudflare.com/ajax/libs/twikoo/1.6.44/twikoo.min.js
+    twikoo: https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js
+    lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js
   # abcjs_basic_js:
   # activate_power_mode:
   # algolia_js:
