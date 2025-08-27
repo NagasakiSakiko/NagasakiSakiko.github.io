@@ -49,7 +49,7 @@ hexo.extend.helper.register('aside_archives', function (options = {}) {
 <!--      <i class="fas fa-archive"></i>-->
       <a class="faa-parent animated-hover">
         <svg class="faa-tada icon"style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true">
-          <use xlink:href='#icon-xiangzi'></use>
+          <use xlink:href='#icon-shijian1'></use>
         </svg></a><span>${_p('aside.card_archives')}</span>
       ${len > limitLength ? `<a class="card-more-btn" href="${url_for(archiveDir)}/" title="${_p('aside.more_button')}"><i class="fas fa-angle-right"></i></a>` : ''}
     </div>
