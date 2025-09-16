@@ -5,6 +5,9 @@ type: 'about'
 top_img:
 ---
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=LXGW+WenKai+TC&pause=1000&color=7799CC&center=true&width=435&lines=%E3%81%82%E3%81%AA%E3%81%9F%E3%80%81%E3%81%94%E8%87%AA%E5%88%86%E3%81%AE%E3%81%93%E3%81%A8%E3%81%B0%E3%81%A3%E3%81%8B%E3%82%8A%E3%81%A7%E3%81%99%E3%81%AE%E3%81%AD"/></a>
+
+
 <div style="text-align: center;"><img src="https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/aaf84b3b1c06e4b858f8728683198d68.png" width="200" height="200"/>
 </div>
 
@@ -14,7 +17,8 @@ top_img:
 - <strong>性别</strong>：♂
 - <strong>身份</strong>：是想🐭的社畜一枚呀
 - <strong>邮箱</strong>：<a href="mailto:(tsaihungye@outlook.com">tsaihungye@outlook.com</a>
-- <strong>擅长</strong>：吃喝嫖赌
+- <strong>擅长</strong>：随便整一个
+
 
 # 💡我的想法
 - <strong>搭建初衷</strong>：自己平时一个人待着的时候，总想说点什么，但又害怕说太多，让我的好朋友们感到烦恼，便有了搭建一个网站的想法，想要在自己的天地说话。还可以搭配成自己喜欢的样子，这很酷。
