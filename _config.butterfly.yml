@@ -296,7 +296,7 @@ aside:
       link: https://github.com/NagasakiSakiko
   card_announcement:
     enable: true
-    content: Hello，欢迎来到小菜的博客。<br> 在坚冰还盖着北海的时候，我看到了怒放的梅花。
+    content: <center> ---网站域名--- <br> <a href="https://tsaihungye.icu" title="">tsaihungye.icu</a> | <a href="https://tsaihungye.com" title="tsaihungye.com">tsaihungye.com</a> <br> Hello，欢迎来到小菜的博客 <br> 在坚冰还盖着北海的时候<br>我看到了怒放的梅花<center> 
   card_recent_post:
     enable: true
     # If set 0 will show all
