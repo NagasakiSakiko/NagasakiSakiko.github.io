@@ -12,7 +12,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
-    "@fancyapps/ui": "^5.0.36",
+    "@fancyapps/ui": "^6.1.1",
     "gulp": "^5.0.0",
     "hexo": "^7.3.0",
     "hexo-abbrlink": "^2.2.1",
