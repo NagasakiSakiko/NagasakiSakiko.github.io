@@ -148,3 +148,15 @@ tag_plugins:
     iconfont: //at.alicdn.com/t/c/font_4786593_ek8kma0ccv9.js #参看https://akilar.top/posts/d2ebecef/
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+
+# Feed Atom
+feed:
+  type: atom # Feed的类型，可以是 atom 或 rss2
+  path: atom.xml # 生成的feed文件名，atom建议用 .xml 后缀
+  limit: 20 # 生成Feed的文章数量，0或false代表所有文章
+  hub: # PubSubHubbub服务，可以加快Google等订阅源的更新速度，建议保留
+  content: true # 在Feed中包含全文内容，非常推荐
+  content_limit: # 如果content设置为false，这里可以设置摘要的字数
+  content_limit_delim: '' # 如果content设置为false，摘要的分割符
+  order_by: -date # 按日期倒序排列
+  autodiscovery: true # 自动在页面<head>中添加feed链接，必选true
