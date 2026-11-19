@@ -1,8 +1,7 @@
 ---
 title: "\U0001F343祥子，你幸福吗"
 description: 哦内盖，让我穿越到动画完结的时候吧，我什么都愿意做。
-cover: >-
-  https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/20250108-4.png
+cover: /img/covers/sakiko.webp
 categories:
   - 动漫
 tags:

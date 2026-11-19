@@ -1,8 +1,7 @@
 ---
 title: 新年快乐
 description: 对2024年过去和展望
-cover: >-
-  https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/v2-a6a9005d545a0fbeeb7159d0ba310787_r.jpg
+cover: /img/covers/review-2024.webp
 swiper_index: 2
 categories:
   - 碎碎念

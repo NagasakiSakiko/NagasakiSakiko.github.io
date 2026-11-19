@@ -1,7 +1,7 @@
 ---
 title: 在困境中寻找希望的故事
 description: 一些随处感想
-cover: 'https://pica.zhimg.com/v2-d8e1c695f6f11a6ba6e1d9c465a541c6_r.jpg'
+cover: /img/covers/adversity.webp
 swiper_index: 1
 categories:
   - 碎碎念

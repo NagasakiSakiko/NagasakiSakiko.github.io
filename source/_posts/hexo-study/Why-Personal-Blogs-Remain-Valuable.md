@@ -1,7 +1,7 @@
 ---
 title: 键盘上的思考：为什么个人博客依然是宝贵的
 description: 写博客是一个思考、总结的过程，有人说“读书说明你学会了学习，而写作说明你学会了思考”。通过写作，把学习的东西加以总结、凝练，真正变为自己的东西。
-cover: 'https://picsum.photos/id/1/5000/3333'
+cover: /img/covers/why-blogs.webp
 categories:
   - 碎碎念
 tags:

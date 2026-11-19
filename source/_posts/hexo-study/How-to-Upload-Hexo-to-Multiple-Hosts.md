@@ -1,7 +1,7 @@
 ---
 title: 如何进行多主机上传Hexo
 description: 使用Hexo在多台主机上同步博客的教程。
-cover: 'https://picsum.photos/id/60/1920/1200'
+cover: /img/covers/multi-host.webp
 categories:
   - Hexo学习
 tags:

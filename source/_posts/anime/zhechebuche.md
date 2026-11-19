@@ -1,7 +1,7 @@
 ---
 title: 👋风雨无阻
 description: 你说这扯不扯
-cover: 'https://cdn.jsdelivr.net/gh/NagasakiSakiko/picture@main/img/20250811-1.png'
+cover: /img/covers/zhechebuche.webp
 categories:
   - 🐘抽象
 tags:

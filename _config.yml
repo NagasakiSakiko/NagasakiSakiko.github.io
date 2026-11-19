@@ -130,10 +130,11 @@ swiper:
     name: recent-posts
     index: 0
   default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+  error_img: /img/404.jpg
+  swiper_css: /vendor/swiper/swiper.min.css # 本地化 swiper 样式
+  swiper_js: /vendor/swiper/swiper.min.js # 本地化 swiper 脚本
+  custom_css: /vendor/swiper/swiperstyle.css # 本地化主题样式补丁
+  custom_js: /vendor/swiper/swiper_init.js # 本地化初始化脚本
 
 tag_plugins:
   enable: true # 开关
@@ -142,12 +143,12 @@ tag_plugins:
   link:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
-    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js #issues标签依赖
-    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
-    iconfont: //at.alicdn.com/t/c/font_4786593_ek8kma0ccv9.js #参看https://akilar.top/posts/d2ebecef/
-    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
-    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
+    anima: /vendor/tag-plugins/font-awesome-animation.min.css # 本地化动画样式
+    jquery: # issues 已关闭，不再加载 jQuery
+    issues: /vendor/tag-plugins/issues.js # 本地化 issues 脚本
+    iconfont: /vendor/iconfont/tag-plugins.js # 已本地化，避免依赖阿里 CDN
+    carousel: /vendor/tag-plugins/carousel-touch.js
+    tag_plugins_css: /vendor/tag-plugins/tag_plugins.css
 
 # Feed Atom
 feed:

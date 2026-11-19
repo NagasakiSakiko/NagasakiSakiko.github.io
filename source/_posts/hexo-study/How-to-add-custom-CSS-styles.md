@@ -1,7 +1,7 @@
 ---
 title: 如何添加自定义的css样式
 description: 添加自定义的css样式
-cover: 'https://raw.githubusercontent.com/NagasakiSakiko/picture/main/img/60-1920x1200.jpg'
+cover: /img/covers/custom-css.webp
 categories:
   - Hexo学习
 tags:
