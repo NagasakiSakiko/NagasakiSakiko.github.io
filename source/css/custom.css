@@ -267,7 +267,7 @@ center#name-container {
     font-family: 'LXGW';
     /* 字体文件地址(相对或者绝对路径都可以) */
     /*noinspection CssUnknownTarget*/
-    src: url(/font/LXGWWenKaiMonoLite-Regular.woff2);
+    src: url(/font/LXGWWenKaiMonoLite-Regular.woff2?v=20261119);
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
