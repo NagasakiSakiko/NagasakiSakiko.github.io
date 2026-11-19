@@ -1049,9 +1049,9 @@ inject:
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
    - <script defer src="/vendor/iconfont/main.js"></script>
-   - <script defer src="/js/notify.js?v=20261119"></script>
-   - <script defer src="/js/nav.js?v=20261119" data-pjax></script>
-   - <script defer src="/js/sun_moon.js?v=20261119"></script>
+   - <script defer src="/js/notify.js?v=20261119-2"></script>
+   - <script defer src="/js/nav.js?v=20261119-2" data-pjax></script>
+   - <script defer src="/js/sun_moon.js?v=20261119-2"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
 
