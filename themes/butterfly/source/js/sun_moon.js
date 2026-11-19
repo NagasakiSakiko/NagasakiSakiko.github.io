@@ -3,7 +3,7 @@
 document.addEventListener('pjax:complete', initTheme);
 document.addEventListener('DOMContentLoaded', initTheme);
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light'; // 默认是 'light'
+    const savedTheme = btf.saveToLocal.get('theme') || document.documentElement.getAttribute('data-theme') || 'light';
 // 设置 <html> 标签的 data-theme 属性
     document.documentElement.setAttribute('data-theme', savedTheme);
     // 设置 body 的 DarkMode 类
@@ -58,7 +58,7 @@ function switchNightMode() {
 
         // 激活夜间模式
         document.documentElement.setAttribute('data-theme', 'dark'); // 设置 data-theme 为 dark
-        localStorage.setItem('theme', 'dark'); // 保存到 localStorage
+        btf.saveToLocal.set('theme', 'dark', 2); // 保存到 localStorage
         document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun');
 
         // 弹窗提醒
@@ -80,7 +80,7 @@ function switchNightMode() {
 
         // 激活白天模式
         document.documentElement.setAttribute('data-theme', 'light'); // 设置 data-theme 为 light
-        localStorage.setItem('theme', 'light'); // 保存到 localStorage
+        btf.saveToLocal.set('theme', 'light', 2); // 保存到 localStorage
         document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon');
 
         // 弹窗提醒

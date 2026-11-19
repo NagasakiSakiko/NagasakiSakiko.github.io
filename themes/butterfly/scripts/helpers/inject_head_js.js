@@ -18,7 +18,21 @@ hexo.extend.helper.register('inject_head_js', function () {
       get: key => {
         const itemStr = localStorage.getItem(key)
         if (!itemStr) return undefined
-        const { value, expiry } = JSON.parse(itemStr)
+        let value
+        let expiry
+        try {
+          ;({ value, expiry } = JSON.parse(itemStr))
+        } catch (error) {
+          // Migrate the legacy plain-string theme value written by sun_moon.js.
+          if (key === 'theme' && ['light', 'dark'].includes(itemStr)) {
+            value = itemStr
+            expiry = Date.now() + 2 * 86400000
+            localStorage.setItem(key, JSON.stringify({ value, expiry }))
+          } else {
+            localStorage.removeItem(key)
+            return undefined
+          }
+        }
         if (Date.now() > expiry) {
           localStorage.removeItem(key)
           return undefined

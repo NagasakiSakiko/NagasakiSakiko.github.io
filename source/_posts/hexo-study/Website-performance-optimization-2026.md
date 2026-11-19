@@ -87,7 +87,7 @@ source/vendor/tag-plugins/
 - jQuery 只用于导航栏滚动监听；
 - Twikoo 评论区的 `.el-*` 样式由 Twikoo 自身提供，不需要全局 Element UI。
 
-因此新增了一个原生通知组件 `source/js/notify.js`，并把导航栏改为原生 `scroll` 事件与 `window.scrollY`。删除全局 Vue、Element UI CSS/JS 和 jQuery 后，昼夜通知、PJAX 与导航栏行为仍然保留。
+因此新增了一个原生通知组件 `source/js/notify.js`，并把导航栏改为原生 `scroll` 事件与 `window.scrollY`。昼夜脚本同时改用 Butterfly 自带的带有效期本地存储格式，并兼容迁移旧的明文主题值。删除全局 Vue、Element UI CSS/JS 和 jQuery 后，昼夜通知、PJAX 与导航栏行为仍然保留。
 
 ## 七、缓存、TLS 与边缘加速
 
