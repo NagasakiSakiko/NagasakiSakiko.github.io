@@ -58,8 +58,10 @@
 
       const firstDay = new Date(viewYear, viewMonth, 1);
       const gridStart = new Date(viewYear, viewMonth, 1 - firstDay.getDay());
+      const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+      const cellCount = Math.ceil((firstDay.getDay() + daysInMonth) / 7) * 7;
 
-      for (let index = 0; index < 42; index += 1) {
+      for (let index = 0; index < cellCount; index += 1) {
         const date = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + index);
         const button = document.createElement('button');
         button.type = 'button';
