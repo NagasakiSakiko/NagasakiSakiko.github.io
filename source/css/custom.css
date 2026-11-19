@@ -4,6 +4,10 @@
     --border-style: 1px solid rgba(255, 255, 255, 0.36);
     --backdrop-filter: blur(9px) saturate(130%);
 }
+/* 让固定的 #web_bg 真正显示在首页内容区后方。 */
+body {
+    background: transparent !important;
+}
 /* 一级菜单居中 */
 #nav .menus_items {
     position: absolute !important;
@@ -19,8 +23,8 @@
 .menus_items .menus_item:nth-child(2) .menus_item_child {
     left: -125px;
 }
-/* 首页文章卡片 */
-.recent-post-item {
+/* 首页文章卡片：与主题选择器保持同等权重，避免被 --card-bg 白底覆盖。 */
+#recent-posts .recent-post-item {
     background: var(--trans-light);
     backdrop-filter: var(--backdrop-filter);
     border-radius: 25px;
@@ -70,6 +74,15 @@ div#archive {
 [data-theme="light"] #page-header.full_page::before,
 [data-theme="light"] #footer::before {
     background: rgba(12, 24, 42, 0.42) !important;
+}
+/* 页脚在昼夜背景上都保持足够对比。 */
+#footer,
+#footer-wrap,
+#footer-wrap a,
+#footer .copyright,
+#footer .footer_custom_text {
+    color: #ffffff !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.88);
 }
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {

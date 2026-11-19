@@ -1037,8 +1037,8 @@ css_prefix: true
 inject:
   head:
    - <link rel="preload" href="/font/LXGWWenKaiMonoLite-Regular.woff2?v=20261119" as="font" type="font/woff2" crossorigin>
-   - <link rel="stylesheet" href="/css/custom.css?v=20261119-bg2">
-   - <link rel="stylesheet" href="/css/calendar.css?v=20261119-cal1">
+   - <link rel="stylesheet" href="/css/custom.css?v=20261119-bg3">
+   - <link rel="stylesheet" href="/css/calendar.css?v=20261119-cal2">
    - <link rel="stylesheet" href="/css/wavy.css">
    - <link rel="stylesheet" href="/css/breathing-light.css">
    - <link rel="stylesheet" href="/css/posttitle.css">
@@ -1055,7 +1055,7 @@ inject:
    - <script defer src="/js/notify.js?v=20261119-2"></script>
    - <script defer src="/js/nav.js?v=20261119-2" data-pjax></script>
    - <script defer src="/js/sun_moon.js?v=20261119-2"></script>
-   - <script defer src="/js/calendar.js?v=20261119-cal1"></script>
+   - <script defer src="/js/calendar.js?v=20261119-cal2"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
 
