@@ -1043,8 +1043,8 @@ inject:
    - <link rel="stylesheet" href="/css/neon-light.css">
    - <link rel="stylesheet" href="/css/daynight.css">
     # 51LA统计代码
-   - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-   - <script>new LingQue.Monitor().init({id:"3KuCPzraWBOYuGGp"});</script>
+   - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+   - <script>window.addEventListener("DOMContentLoaded",()=>{if(window.LingQue){new LingQue.Monitor().init({id:"3KuCPzraWBOYuGGp"})}})</script>
 
 #   - <link rel="stylesheet" href="/css/page-header.css.css">
   bottom:
