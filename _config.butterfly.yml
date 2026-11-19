@@ -96,7 +96,7 @@ footer_img: true
 
 # Website Background
 # Can set it to color or image url
-background: url(/img/default.webp)
+background: /img/default.webp
 
 cover:
   # Disable the cover or not
