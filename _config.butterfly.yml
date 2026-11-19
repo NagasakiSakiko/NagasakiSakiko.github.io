@@ -96,7 +96,7 @@ footer_img: true
 
 # Website Background
 # Can set it to color or image url
-background:
+background: url(/img/default.webp)
 
 cover:
   # Disable the cover or not
@@ -298,6 +298,8 @@ aside:
   card_announcement:
     enable: true
     content: <center> <strong>---网站域名---</strong> <br> <a href="https://tsaihungye.icu" title="">tsaihungye.icu</a> | <a href="https://tsaihungye.com" title="tsaihungye.com">tsaihungye.com</a> <br> Hello，欢迎来到小菜的博客 <br> 在坚冰还盖着北海的时候<br>我看到了怒放的梅花<center> 
+  card_calendar:
+    enable: true
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -1035,7 +1037,8 @@ css_prefix: true
 inject:
   head:
    - <link rel="preload" href="/font/LXGWWenKaiMonoLite-Regular.woff2?v=20261119" as="font" type="font/woff2" crossorigin>
-   - <link rel="stylesheet" href="/css/custom.css?v=20261119-bg1">
+   - <link rel="stylesheet" href="/css/custom.css?v=20261119-bg2">
+   - <link rel="stylesheet" href="/css/calendar.css?v=20261119-cal1">
    - <link rel="stylesheet" href="/css/wavy.css">
    - <link rel="stylesheet" href="/css/breathing-light.css">
    - <link rel="stylesheet" href="/css/posttitle.css">
@@ -1052,6 +1055,7 @@ inject:
    - <script defer src="/js/notify.js?v=20261119-2"></script>
    - <script defer src="/js/nav.js?v=20261119-2" data-pjax></script>
    - <script defer src="/js/sun_moon.js?v=20261119-2"></script>
+   - <script defer src="/js/calendar.js?v=20261119-cal1"></script>
    - <canvas id="universe"></canvas>
    - <script defer src="/js/universe.js"></script>
 

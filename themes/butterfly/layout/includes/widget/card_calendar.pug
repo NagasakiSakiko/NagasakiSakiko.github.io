@@ -1,0 +1,24 @@
+.card-widget.card-calendar#aside-calendar
+  .item-headline
+    i.far.fa-calendar-alt(aria-hidden='true')
+    span 日曆
+  .calendar-panel(data-calendar)
+    .calendar-summary
+      .calendar-summary-copy
+        span.calendar-week(data-calendar-week) 本週
+        strong.calendar-day(data-calendar-day) --
+        span.calendar-full-date(data-calendar-full-date) 載入日期中
+      .calendar-month-nav(aria-label='月份切換')
+        button.calendar-nav-button(type='button' data-calendar-prev aria-label='上一個月') 上月
+        button.calendar-nav-button.calendar-today-button(type='button' data-calendar-today) 本月
+        button.calendar-nav-button(type='button' data-calendar-next aria-label='下一個月') 下月
+    .calendar-month-title(data-calendar-title aria-live='polite')
+    .calendar-weekdays(aria-hidden='true')
+      span 日
+      span 一
+      span 二
+      span 三
+      span 四
+      span 五
+      span 六
+    .calendar-days(data-calendar-days role='grid' aria-label='月份日曆')

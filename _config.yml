@@ -123,7 +123,7 @@ search:
 swiper:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
+  enable_page: / # 仅在首页注入轮播容器，避免文章页寻找不存在的 recent-posts
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
