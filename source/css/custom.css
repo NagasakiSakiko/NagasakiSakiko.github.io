@@ -66,6 +66,11 @@ div#archive {
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
+/* 白天首页与页脚降低亮度，保留蓝天层次并减轻大面积高亮。 */
+[data-theme="light"] #page-header.full_page::before,
+[data-theme="light"] #footer::before {
+    background: rgba(12, 24, 42, 0.42) !important;
+}
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;
