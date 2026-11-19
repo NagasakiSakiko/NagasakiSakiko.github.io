@@ -63,18 +63,10 @@ function switchNightMode() {
 
         // 弹窗提醒
         setTimeout(() => {
-            new Vue({
-                data: function () {
-                    this.$notify({
-                        title: "关灯啦🌙",
-                        message: "明月装饰了你的窗子，你装饰了别人的梦。",
-                        position: 'top-left',
-                        offset: 50,
-                        showClose: true,
-                        type: "success",
-                        duration: 5000
-                    });
-                }
+            window.siteNotify?.({
+                title: "关灯啦🌙",
+                message: "明月装饰了你的窗子，你装饰了别人的梦。",
+                duration: 5000
             });
         }, 2000);
     } else {
@@ -93,18 +85,10 @@ function switchNightMode() {
 
         // 弹窗提醒
         setTimeout(() => {
-            new Vue({
-                data: function () {
-                    this.$notify({
-                        title: "开灯啦🌞",
-                        message: "歌未竟，东方白。",
-                        position: 'top-left',
-                        offset: 50,
-                        showClose: true,
-                        type: "success",
-                        duration: 5000
-                    });
-                }
+            window.siteNotify?.({
+                title: "开灯啦🌞",
+                message: "歌未竟，东方白。",
+                duration: 5000
             });
         }, 2000);
     }
