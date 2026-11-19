@@ -1,7 +1,7 @@
 ---
 title: 一次把博客加载慢的问题修一遍
 description: 从失效 CDN、阻塞脚本、超大字体、远程封面到 Nginx 缓存，记录本站 2026 年的一次性能体检与修复。
-cover: /img/default.webp
+cover: /img/covers/performance-optimization.webp
 categories:
   - Hexo学习
 tags:
