@@ -1,8 +1,8 @@
 :root {
-    --trans-light: rgba(255, 255, 255, 0.88);
-    --trans-dark: rgba(25, 25, 25, 0.88);
-    --border-style: 1px solid rgb(169, 169, 169);
-    --backdrop-filter: blur(5px) saturate(150%);
+    --trans-light: rgba(255, 255, 255, 0.78);
+    --trans-dark: rgba(22, 24, 32, 0.76);
+    --border-style: 1px solid rgba(255, 255, 255, 0.36);
+    --backdrop-filter: blur(9px) saturate(130%);
 }
 /* 一级菜单居中 */
 #nav .menus_items {

@@ -5,6 +5,16 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+/* 内容区使用和首页一致的固定背景 */
+#web_bg {
+  background-image: url("/img/default.webp") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+html[data-theme="dark"] #web_bg {
+  background-image: url("/img/top_img.jpg") !important;
+}
 /* 夜间模式头部背景 */
 html[data-theme="dark"] #page-header {
   background-image: url("/img/top_img.jpg");
@@ -39,6 +49,10 @@ html[data-theme="dark"] #footer {
     background-repeat: no-repeat;
     z-index: -1;
   }
+  html[data-theme="light"] #web_bg {
+    background-image: url("/img/mobileday.webp") !important;
+    background-position: center top;
+  }
 }
 /* 针对手机端设置不同的背景图（夜间模式） */
 @media screen and (max-width: 768px) {
@@ -55,6 +69,17 @@ html[data-theme="dark"] #footer {
     background-repeat: no-repeat;
     z-index: -1;
   }
+  html[data-theme="dark"] #web_bg {
+    background-image: url("/img/moblienight.webp") !important;
+    background-position: center top;
+  }
+}
+/* 文章标题区透出全站背景，文章封面仍保留在首页列表中。 */
+#page-header.post-bg,
+html[data-theme="light"] #page-header.post-bg,
+html[data-theme="dark"] #page-header.post-bg {
+  background-image: none !important;
+  background-color: transparent !important;
 }
 /* 确保底部内容在遮罩层之上 */
 #footer-wrap > * {
