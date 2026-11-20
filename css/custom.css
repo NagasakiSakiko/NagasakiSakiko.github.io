@@ -78,9 +78,9 @@ div#archive {
 [data-theme="dark"] #recent-posts .recent-post-info > .article-meta-wrap a {
     color: rgba(255, 255, 255, 0.72) !important;
 }
-/* 夜间模式页头保留背景图；页脚加深遮罩以托住文字。 */
+/* 夜间模式页头保留背景图；页脚只留轻遮罩，让背景图保持明亮。 */
 [data-theme="dark"] #footer::before {
-    background: rgba(5, 8, 14, 0.64) !important;
+    background: rgba(5, 8, 14, 0.12) !important;
 }
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
@@ -88,9 +88,16 @@ div#archive {
 /* 白天首页与页脚降低亮度，保留蓝天层次并减轻大面积高亮。 */
 [data-theme="light"] #page-header.full_page::before,
 [data-theme="light"] #footer::before {
-    background: rgba(12, 24, 42, 0.42) !important;
+    background: rgba(12, 24, 42, 0.24) !important;
 }
 /* 页脚在昼夜背景上都保持足够对比。 */
+#footer {
+    z-index: 0;
+}
+#footer::before {
+    z-index: 0;
+    pointer-events: none;
+}
 #footer-wrap,
 #footer-wrap a,
 #footer-wrap span,
@@ -99,6 +106,9 @@ div#archive {
     color: #ffffff !important;
     opacity: 1 !important;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.96);
+}
+#footer-wrap {
+    z-index: 1;
 }
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
