@@ -34,6 +34,18 @@ html[data-theme="dark"] #web_bg {
 #web_bg::before {
     display: none !important;
 }
+/* 首页顶部不再单独重复绘制壁纸，直接透出同一张根背景。 */
+#page-header.full_page,
+html[data-theme="light"] #page-header.full_page,
+html[data-theme="dark"] #page-header.full_page {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+#page-header.full_page::before,
+html[data-theme="light"] #page-header.full_page::before,
+html[data-theme="dark"] #page-header.full_page::before {
+    background: transparent !important;
+}
 /* 页脚不再重复绘制另一张背景，直接透出同一张固定全局壁纸。 */
 #footer,
 html[data-theme="light"] #footer,
