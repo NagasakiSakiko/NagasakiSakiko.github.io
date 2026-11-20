@@ -46,6 +46,20 @@ html[data-theme="light"] #page-header.full_page::before,
 html[data-theme="dark"] #page-header.full_page::before {
     background: transparent !important;
 }
+
+/* Keep standalone pages on the same fixed wallpaper as the rest of the site. */
+#page-header.not-home-page,
+html[data-theme="light"] #page-header.not-home-page,
+html[data-theme="dark"] #page-header.not-home-page {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+#page-header.not-home-page::before,
+html[data-theme="light"] #page-header.not-home-page::before,
+html[data-theme="dark"] #page-header.not-home-page::before {
+  background: transparent !important;
+}
 /* 页脚不再重复绘制另一张背景，直接透出同一张固定全局壁纸。 */
 #footer,
 html[data-theme="light"] #footer,
