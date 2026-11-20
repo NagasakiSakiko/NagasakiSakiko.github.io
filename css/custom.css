@@ -44,15 +44,7 @@ html[data-theme="dark"] #page-header.full_page {
 #page-header.full_page::before,
 html[data-theme="light"] #page-header.full_page::before,
 html[data-theme="dark"] #page-header.full_page::before {
-    background: transparent !important;
-}
-
-/* 首页首屏文字使用双层暗影，在明亮或复杂背景上保持清晰。 */
-#page-header.full_page #site-title,
-#page-header.full_page #site-subtitle {
-    text-shadow:
-        0 2px 5px rgba(0, 0, 0, 0.96),
-        0 0 18px rgba(0, 0, 0, 0.68) !important;
+    background: rgba(3, 10, 22, 0.22) !important;
 }
 
 /* Keep standalone pages on the same fixed wallpaper as the rest of the site. */
