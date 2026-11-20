@@ -110,6 +110,16 @@ div#archive {
 #footer-wrap {
     z-index: 1;
 }
+/* 分页始终位于内容层上方，并使用可点击指针。 */
+#pagination {
+    position: relative;
+    z-index: 20;
+}
+#pagination .page-number,
+#pagination .extend {
+    pointer-events: auto;
+    cursor: pointer;
+}
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
     background: rgba(158, 204, 171, 0.5) !important;

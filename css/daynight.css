@@ -25,7 +25,6 @@ html[data-theme="dark"] #page-header {
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  z-index: -1;
 }
 /* 夜间模式底部背景 */
 html[data-theme="dark"] #footer {
@@ -47,7 +46,6 @@ html[data-theme="dark"] #footer {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    z-index: -1;
   }
   html[data-theme="light"] #web_bg {
     background-image: url("/img/mobileday.webp") !important;
@@ -67,7 +65,6 @@ html[data-theme="dark"] #footer {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    z-index: -1;
   }
   html[data-theme="dark"] #web_bg {
     background-image: url("/img/moblienight.webp") !important;
