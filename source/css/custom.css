@@ -8,6 +8,29 @@
 body {
     background: transparent !important;
 }
+/* 首页采用 Fomalhaut 的一图流结构：容器透明，只让卡片承载底色。 */
+#body-wrap.page.home,
+#body-wrap.page.home #content-inner,
+#body-wrap.page.home #recent-posts,
+#body-wrap.page.home #aside-content {
+    background: transparent !important;
+}
+#web_bg {
+    inset: 0;
+    background-attachment: fixed !important;
+}
+/* 页脚不再重复绘制另一张背景，直接透出同一张固定全局壁纸。 */
+#footer,
+html[data-theme="light"] #footer,
+html[data-theme="dark"] #footer {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+/* 原主题夜间默认 70% 黑幕过重；保留轻遮罩，让壁纸细节可见。 */
+[data-theme="dark"] #web_bg::before {
+    background: rgba(4, 7, 13, 0.22) !important;
+    pointer-events: none;
+}
 /* 一级菜单居中 */
 #nav .menus_items {
     position: absolute !important;
