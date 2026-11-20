@@ -1,6 +1,6 @@
 :root {
     --trans-light: rgba(255, 255, 255, 0.78);
-    --trans-dark: rgba(22, 24, 32, 0.76);
+    --trans-dark: rgba(22, 24, 32, 0.92);
     --border-style: 1px solid rgba(255, 255, 255, 0.36);
     --backdrop-filter: blur(9px) saturate(130%);
 }
@@ -56,16 +56,31 @@ div#archive {
     background: rgba(0, 0, 0, 0.7) !important;
 }
 /* 夜间模式遮罩 */
-[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #recent-posts .recent-post-item,
 [data-theme="dark"] #aside-content .card-widget,
 [data-theme="dark"] div#post,
 [data-theme="dark"] div#archive,
 [data-theme="dark"] div#page {
     background: var(--trans-dark);
 }
-/* 夜间模式页脚页头遮罩透明 */
+/* 夜间模式文章卡片采用 Fomal 风格的深色玻璃层，确保浅色文字可读。 */
+[data-theme="dark"] #recent-posts .recent-post-item {
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+[data-theme="dark"] #recent-posts .recent-post-info > .article-title {
+    color: rgba(255, 255, 255, 0.96) !important;
+}
+[data-theme="dark"] #recent-posts .recent-post-info > .content {
+    color: rgba(255, 255, 255, 0.82) !important;
+}
+[data-theme="dark"] #recent-posts .recent-post-info > .article-meta-wrap,
+[data-theme="dark"] #recent-posts .recent-post-info > .article-meta-wrap a {
+    color: rgba(255, 255, 255, 0.72) !important;
+}
+/* 夜间模式页头保留背景图；页脚加深遮罩以托住文字。 */
 [data-theme="dark"] #footer::before {
-    background: transparent !important;
+    background: rgba(5, 8, 14, 0.64) !important;
 }
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
@@ -76,13 +91,14 @@ div#archive {
     background: rgba(12, 24, 42, 0.42) !important;
 }
 /* 页脚在昼夜背景上都保持足够对比。 */
-#footer,
 #footer-wrap,
 #footer-wrap a,
-#footer .copyright,
-#footer .footer_custom_text {
+#footer-wrap span,
+#footer-wrap .copyright,
+#footer-wrap .footer_custom_text {
     color: #ffffff !important;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.88);
+    opacity: 1 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.96);
 }
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {
