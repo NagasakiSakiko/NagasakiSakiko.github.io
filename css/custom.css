@@ -4,9 +4,20 @@
     --border-style: 1px solid rgba(255, 255, 255, 0.36);
     --backdrop-filter: blur(9px) saturate(130%);
 }
-/* 让固定的 #web_bg 真正显示在首页内容区后方。 */
+/* 将全局壁纸画在根背景上，避免负层级的 #web_bg 被浏览器根画布遮住。 */
 body {
-    background: transparent !important;
+    background-color: #d9dde1 !important;
+    background-image: url('/img/default.webp') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+html[data-theme="dark"] body {
+    background-color: #10131a !important;
+    background-image:
+        linear-gradient(rgba(4, 7, 13, 0.22), rgba(4, 7, 13, 0.22)),
+        url('/img/top_img.jpg') !important;
 }
 /* 首页采用 Fomalhaut 的一图流结构：容器透明，只让卡片承载底色。 */
 #body-wrap.page.home,
@@ -15,9 +26,13 @@ body {
 #body-wrap.page.home #aside-content {
     background: transparent !important;
 }
-#web_bg {
-    inset: 0;
-    background-attachment: fixed !important;
+#web_bg,
+html[data-theme="light"] #web_bg,
+html[data-theme="dark"] #web_bg {
+    background: transparent !important;
+}
+#web_bg::before {
+    display: none !important;
 }
 /* 页脚不再重复绘制另一张背景，直接透出同一张固定全局壁纸。 */
 #footer,
@@ -26,10 +41,17 @@ html[data-theme="dark"] #footer {
     background-image: none !important;
     background-color: transparent !important;
 }
-/* 原主题夜间默认 70% 黑幕过重；保留轻遮罩，让壁纸细节可见。 */
-[data-theme="dark"] #web_bg::before {
-    background: rgba(4, 7, 13, 0.22) !important;
-    pointer-events: none;
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('/img/mobileday.webp') !important;
+        background-position: center top !important;
+        background-attachment: scroll !important;
+    }
+    html[data-theme="dark"] body {
+        background-image:
+            linear-gradient(rgba(4, 7, 13, 0.22), rgba(4, 7, 13, 0.22)),
+            url('/img/moblienight.webp') !important;
+    }
 }
 /* 一级菜单居中 */
 #nav .menus_items {
