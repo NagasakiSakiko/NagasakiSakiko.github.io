@@ -1,4 +1,4 @@
-- var pjaxExclude = 'a:not([target="_blank"])'
+- var pjaxExclude = 'a:not([target="_blank"]):not(.page-number):not(.extend)'
 if theme.pjax.exclude
   each val in theme.pjax.exclude
     - pjaxExclude += `:not([href="${val}"])`
