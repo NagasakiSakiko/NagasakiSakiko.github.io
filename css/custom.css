@@ -7,7 +7,7 @@
 /* 将全局壁纸画在根背景上，避免负层级的 #web_bg 被浏览器根画布遮住。 */
 body {
     background-color: #d9dde1 !important;
-    background-image: url('/img/default.webp') !important;
+    background-image: url('/img/desktop-day.webp') !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -17,7 +17,7 @@ html[data-theme="dark"] body {
     background-color: #10131a !important;
     background-image:
         linear-gradient(rgba(4, 7, 13, 0.22), rgba(4, 7, 13, 0.22)),
-        url('/img/top_img.jpg') !important;
+        url('/img/desktop-night.webp') !important;
 }
 /* 首页采用 Fomalhaut 的一图流结构：容器透明，只让卡片承载底色。 */
 #body-wrap.page.home,
