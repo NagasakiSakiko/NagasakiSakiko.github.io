@@ -69,14 +69,32 @@ html[data-theme="dark"] #footer {
 }
 @media screen and (max-width: 768px) {
     body {
-        background-image: url('/img/mobileday.webp') !important;
-        background-position: center top !important;
+        position: relative;
+        isolation: isolate;
+        background-image: none !important;
         background-attachment: scroll !important;
     }
+
+    body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background-image: url('/img/mobileday.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: '';
+        pointer-events: none;
+    }
+
     html[data-theme="dark"] body {
+        background-image: none !important;
+    }
+
+    html[data-theme="dark"] body::before {
         background-image:
             linear-gradient(rgba(4, 7, 13, 0.22), rgba(4, 7, 13, 0.22)),
-            url('/img/moblienight.webp') !important;
+            url('/img/moblienight.webp');
     }
 }
 /* 一级菜单居中 */
