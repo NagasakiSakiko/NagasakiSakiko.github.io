@@ -1037,13 +1037,13 @@ css_prefix: true
 inject:
   head:
    - <link rel="preload" href="/font/LXGWWenKaiMonoLite-Regular.woff2?v=20261119" as="font" type="font/woff2" crossorigin>
-   - <link rel="stylesheet" href="/css/custom.css?v=20261121-mobile-bg1">
+   - <link rel="stylesheet" href="/css/custom.css?v=20261122-desktop-bg2">
    - <link rel="stylesheet" href="/css/calendar.css?v=20261119-cal2">
    - <link rel="stylesheet" href="/css/breathing-light.css">
    - <link rel="stylesheet" href="/css/posttitle.css">
    - <link rel="stylesheet" href="/css/universe.css">
    - <link rel="stylesheet" href="/css/neon-light.css">
-   - <link rel="stylesheet" href="/css/daynight.css?v=20261120-footer2">
+   - <link rel="stylesheet" href="/css/daynight.css?v=20261122-desktop-bg2">
     # 51LA统计代码
    - <script defer src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
    - <script>window.addEventListener("DOMContentLoaded",()=>{if(window.LingQue){new LingQue.Monitor().init({id:"3KuCPzraWBOYuGGp"})}})</script>
